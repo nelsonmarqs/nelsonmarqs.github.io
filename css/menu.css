@@ -1,0 +1,335 @@
+
+/*------ Menu ------*/
+.menu{
+  width:100%;
+  height:80px;
+  background-image: url("https://i.imgur.com/4Ft3zor.png");
+  box-shadow: 4px 4px 0px #bdff00;
+    z-index: 1000; /* Ajuste o valor do z-index conforme necessário */
+  position:sticky;
+  top:0!important;
+}
+
+.menu-area{
+  display:flex;
+  justify-content:space-between;
+  grid-column-gap:15px;
+  padding:0px 15px;
+}
+
+.menu-sanduiche{
+  height:80px;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color:#d4c5fe;
+  margin: 3px 0;
+  transition: 0.4s;
+  border-radius:6px;
+  box-shadow: 0.75px 0.75px 0px #ff40ff, -0.75px 0px 0px #00e700, 1.5px 1.5px #000bfd;
+}
+
+.bar2{
+  width:26px;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.menu-social{
+  display:none;
+}
+
+.menu-search{
+  height:80px;
+  display:flex;
+  align-items:center;
+  text-shadow: 0.75px 0.75px 0px #ff40ff, -0.75px 0px 0px #00e700, 1.5px 1.5px #000bfd;
+}
+
+.menu-search a i{
+  font-size:30px;
+  color:#d4c5fe;
+  animation: rgbglitch 6s infinite;
+}
+
+@media(min-width:768px){
+  .menu-area{
+    justify-content:flex-start;
+  }
+
+  .menu-social{
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    grid-column-gap:15px;
+    margin-right:15px;
+  }
+
+  .menu-social i{
+    font-size:30px;
+    text-shadow: 0.75px 0.75px 0px #ff40ff, -0.75px 0px 0px #00e700, 1.5px 1.5px #000bfd;
+    animation: rgbglitch 6s infinite;
+  }
+}
+
+@media(min-width:1400px){
+  .menu{
+    display:flex;
+    justify-content:center;
+  }
+
+  .menu-area{
+    min-width:1400px;
+  }
+}
+
+/*------ Menu Mobile ------*/
+.menu-mobile {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  opacity:0;
+  transition:0.5s;
+  padding:20px 0px;
+  position:fixed;
+  background-image: url("https://i.imgur.com/4Ft3zor.png");
+  z-index:999; /* Ajuste o valor do z-index conforme necessário */
+  top:-80px;
+}
+
+.menu-mobile.menu-mobile-visible {
+  height:100vh;
+  overflow:scroll;
+  opacity:1;
+  top:80px;
+}
+
+
+.menu-mobile-area{
+  height:860px;
+  padding:0px 15px;
+}
+
+.menu-mobile-explorar{
+  display:flex;
+  flex-direction:column;
+  grid-row-gap:10px;
+}
+
+.menu-mobile-explorar h1{
+  font-size:50px;
+  font-family:BarlowCondensed-Bold;
+  text-shadow: 1px 1px 0px #ff40ff, -1px 0px 0px #00e700, 2px 2px #000bfd;
+}
+
+.menu-mobile-explorar hr{
+}
+
+.menu-mobile-explorar a{
+  font-size:20px;
+  font-family:OpenSans-Regular;
+}
+
+.tags-plus{
+  font-family:VCR!important;
+  color:#bdff00;
+}
+
+.menu-mobile-series{
+  display:flex;
+  grid-row-gap:10px;
+  flex-direction:column;
+}
+
+.menu-mobile-series h1{
+  font-size:50px;
+  font-family:BarlowCondensed-Bold;
+  text-shadow: 1px 1px 0px #ff40ff, -1px 0px 0px #00e700, 2px 2px #000bfd;
+  margin-top:10px;
+}
+
+.menu-mobile-series hr{
+}
+
+.menu-mobile-series a{
+  font-size:20px;
+  font-family:OpenSans-Regular;
+}
+
+.menu-mobile-ultimas{
+  display:none;
+}
+
+.menu-mobile-social{
+  display:flex;
+  grid-row-gap:10px;
+  flex-direction:column;
+  box-shadow:5px 5px 0px #f568bb;
+  border-radius:6px;
+  margin-top:20px;
+  padding-bottom:20px;
+}
+
+.menu-mobile-social div:nth-child(1){
+  display:flex;
+  flex-wrap:wrap;
+  grid-row-gap:15px;
+  justify-content:center;
+  grid-column-gap:10px;
+}
+
+.menu-mobile-social div:nth-child(1) a i{
+  font-size:25px;
+  text-shadow: 0.75px 0.75px 0px #ff40ff, -0.75px 0px 0px #00e700, 1.5px 1.5px #000bfd;
+}
+
+.menu-mobile-social div:nth-child(2){
+  display:flex;
+  flex-wrap:wrap;
+  grid-row-gap:15px;
+  justify-content:center;
+  grid-column-gap:15px;
+}
+
+.menu-mobile-social div:nth-child(2) a{
+  font-size:16px;
+  font-family:VCR;
+  text-decoration:underline;
+}
+
+@media(min-width:992px){
+  .menu-mobile.menu-mobile-visible{
+    overflow-y:hidden;  
+  }
+
+  .menu-mobile-area{
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    grid-column-gap:15px;
+    margin:0px 15px;
+    padding:30px 0px;
+    box-shadow:5px 5px 0px #f568bb;
+    border-radius:6px;
+  }
+
+  .menu-mobile-explorar{
+    width:calc(192.4px + (274 - 192.4) * ((100vw - 992px) / (1400 - 992)));
+  }
+
+  .menu-mobile-series{
+    width:calc(192.4px + (274 - 192.4) * ((100vw - 992px) / (1400 - 992)));
+  }
+
+  .menu-mobile-series h1{
+    margin-top:0px;
+  }
+  
+  .menu-mobile-ultimas{
+    display:flex;
+    grid-column-gap:15px;
+  }
+
+  .menu-mobile-ultimas-cards{
+    width:calc(167.4px + (249 - 167.4) * ((100vw - 992px) / (1400 - 992)));
+    display:flex;
+    transition:0.3s;
+  }
+
+  .menu-mobile-ultimas-cards:hover{
+    transform:scale(1.05);
+  }
+
+  .menu-mobile-ultimas-cards figure{
+    width:100%;
+    height:calc(270.733px + (314.633 - 270.733) * ((100vw - 992px) / (1400 - 992)));
+    border-radius:6px;
+    overflow:hidden;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(122, 121, 121,1) 25%, rgba(122, 121, 121,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 75%, rgba(122, 121, 121,1) 75%, rgba(122, 121, 121,1) 100%);
+    background-size: 8.00px 8.00px;
+  }
+
+
+  .menu-mobile-ultimas-cards figure img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0.8;
+  }
+
+  .menu-mobile-ultimas-cards div{
+    width:calc(167.4px + (249 - 167.4) * ((100vw - 992px) / (1400 - 992)));
+    height:calc(270.733px + (314.633 - 270.733) * ((100vw - 992px) / (1400 - 992)));
+    display:flex;
+    align-items:flex-end;
+    position:absolute;
+    padding:10px;
+  }
+
+  .menu-mobile-ultimas-cards div h2{
+    font-family:BarlowCondensed-Bold;
+    font-size:24px;
+    line-height:27px;
+    color:#d4c5fe;
+  }
+
+  .menu-mobile-ultimas-cards div h2 span{
+    background:black;
+  }
+
+  .menu-mobile-social{
+    width:100%;
+    padding-top:20px;
+    box-shadow:none;
+    border-radius:none;
+    padding-bottom:0px;
+  }
+}
+
+@media(min-width:1370px){
+  .menu-mobile-area{
+    width:1370px;
+  }
+}
+
+@media(min-width:1400px){
+  .menu-mobile-area{
+    margin:0 auto;
+  }
+
+  .menu-mobile-explorar,
+  .menu-mobile-series{
+    width:274px;
+  }
+
+  .menu-mobile-ultimas-cards{
+    width:249px;
+  }
+
+  .menu-mobile-ultimas-cards figure{
+    height:314.633px;
+  }
+
+  .menu-mobile-ultimas-cards div{
+    width:249px;
+    height:314.633px;
+  }
+}
