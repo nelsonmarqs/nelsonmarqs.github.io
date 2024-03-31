@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Home | DeltaBox</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<main class="simples-post">
+		<section class="simples-post-social">
+			<section>
+				<a href=""><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+				<a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+				<a href=""><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+				<a href=""><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+				<a href=""><i class="fab fa-reddit-alien" aria-hidden="true"></i></a>
+			</section>	
+		</section>
+
+		<section class="simples-post-site">
+			<!-- Menu -->
+			<nav class="menu">
+				<nav class="menu-area">
+					<div class="menu-sanduiche" id="toggleMenu" onclick="myFunction(this)">
+						<span class="bar1"></span>
+						<span class="bar2"></span>
+						<span class="bar3"></span>
+					</div>
+							          
+					<div class="menu-logo">
+						<a href='../index.html'><img src="https://merry-otter-db3e0a.netlify.app/img/Vector.svg" alt=""></a>
+					</div>
+							          
+					<div class="menu-social">
+						<a href=""><i class="fab fa-instagram"></i></a>
+						<a href=""><i class="fab fa-twitter"></i></a>
+						<a href=""><i class="fab fa-facebook-square"></i></a>
+						<a href=""><i class="fab fa-reddit-alien"></i></a>
+					</div>
+							          
+					<div class="menu-search">
+						<a onclick="openPopup()"><i class="fas fa-search"></i></a>
+					</div>
+				</nav>
+			</nav>
+
+			<!-- Menu Mobile -->
+			<nav class="menu-mobile" id="menuMobile">
+				<nav class="menu-mobile-area">
+					<section class="menu-mobile-explorar">
+						<h1>Explorar</h1>
+						<hr>
+						<a href="">Entrevista</a>
+						<a href="">Comportamento</a>
+						<a href="">Filmes e TV</a>
+						<a href="">Música</a>
+						<a href="">Drogas</a>
+						<a href="">Games</a>
+						<a href="">Politica</a>
+						<a href="" class="tags-plus">Todas as Tags+</a>
+					</section>
+						      
+					<section class="menu-mobile-series">
+						<h1>Series</h1>
+						<hr>
+						<a href="">Especial</a>
+						<a href="">Comportamento</a>
+						<a href="">Filme e TV</a>
+						<a href="">Música</a>
+						<a href="">Drogas</a>
+					</section>
+						      
+					<section class="menu-mobile-ultimas">
+						<div class="menu-mobile-ultimas-cards">
+							<figure>
+									<img src="https://video-images.vice.com/test-uploads/articles/5eb4761d13ccfa0098f1650f/lede/1588961569764-brioches_S01E01.png?crop=1xw:1xh;center,center" alt="">
+							</figure>
+
+							<div>
+									<h2><span><a href="">Congelamento de óvulos: é pra mim?</a></span></h2>
+							</div>
+						</div>
+
+						<div class="menu-mobile-ultimas-cards">
+							<figure>
+								<img src="https://video-images.vice.com/videos/5fdbf531ee7c0a646d59b57b/lede/1608326105519-vicevwnthumbnailoption1981.jpeg?crop=1xw:1xh;center,center" alt="">
+							</figure>
+
+							<div>
+								<h2><span><a href="">Maju de Araújo: Corpos diversos nas passarelas</a></span></h2>
+							</div>
+						</div>
+
+						<div class="menu-mobile-ultimas-cards">
+							<figure>
+								<img src="https://images.squarespace-cdn.com/content/v1/56d6c9b7ab48de761af76d39/1538564308404-9W867S5F46UFH2844AMT/ponyexpress.jpg?format=1500w" alt="">
+							</figure>
+
+							<div>
+								<h2><span><a href="">O que ver, ler, ouvir e curtir em junho</a></span></h2>
+							</div>
+						</div>
+					</section>
+						      
+					<section class="menu-mobile-social">
+						<div>
+							<a href=""><i class="fa-brands fa-tiktok text-glitch"></i></a>
+							<a href=""><i class="fa-brands fa-instagram text-glitch"></i></a>
+							<a href=""><i class="fa-brands fa-facebook-f text-glitch"></i></a>
+							<a href=""><i class="fa-brands fa-twitter text-glitch"></i></a>
+							<a href=""><i class="fa-brands fa-pinterest-p text-glitch"></i></a>
+							<a href=""><i class="fa-brands fa-youtube text-glitch"></i></a>
+						</div>
+							        
+						<div>
+							<a href="">Newsletter</a>
+							<a href="">Contatos</a>
+							<a href="">Sobre</a>
+						</div>
+					</section>
+				</nav>
+			</nav>	
+
+			<!-- Barra de Progresso -->
+			<div class="progress-container">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+
+			<!-- Post Simples Titulo -->
+			<header class="Post-simples-Titulo">
+				<div>
+					<a href="">Da Redação</a>
+					<h1>Participe do evento de 13 anos da Pública em São Paulo</h1>
+				</div>
+			</header>
+
+			<!-- Post Simples Area -->
+			<section class="Post-simples-area">
+				<article class="Post-simples-descricao">
+					<p>A Pública comemora seu aniversário no dia 13 de março, com debates abertos ao público. Participe!</p>
+				</article>
+				
+				<address>
+					<time><p>20 de fevereiro de </p><a href="">2024</a> <i>13:28</i></time>
+					<span>Por: <a href="">Redação</a></span>
+				</address>
+
+				<aside>
+					<div>
+						<a href=""><span>democracia</span></a>
+						<a href=""><span>desinformação</span></a>
+						<a href=""><span>direitos humanos</span></a>
+						<a href=""><span>jornalismo</span></a>
+						<a href=""><span>Mudanças Climáticas</span></a>
+						<a href=""><span>tecnologia</span></a>
+					</div>
+				</aside>
+				
+				<article class="Post-simples-text">
+					<p>Defender e fortalecer a democracia é um trabalho constante, para o qual o jornalismo é imprescindível. A defesa da democracia também passa por temas cada vez mais urgentes em nossa sociedade, como a emergência climática e o poder das big techs e dos algoritmos.</p>
+
+					<p>Para a Agência Pública, a defesa dos direitos humanos e o fortalecimento da democracia são valores inegociáveis. É por isso que para celebrar seu aniversário de 13 anos, a Pública vai reunir no Tucarena convidados como Ailton Krenak, Ana Toni, Juliana Dal Piva e Letícia Cesarino, para o evento “Pública 13 anos: O jornalismo na linha de frente da democracia”, que vai debater os caminhos da democracia em diferentes áreas. O evento é realizado em parceria com o curso de Jornalismo e a Faculdade de Filosofia, Comunicação, Letras e Artes da PUC-SP.</p>
+
+					<p>O encontro será no dia 13 de março, com duas mesas no período da manhã e uma no período da tarde. As inscrições são gratuitas e podem ser feitas por este link.</p>
+
+					<p>O evento terá uma fala de abertura do professor Fábio Cypriano, diretor da Faculdade de Filosofia, Comunicação, Letras e Artes da PUC e de Natalia Viana, co-fundadora da Agência Pública.</p>
+
+					<iframe src="https://www.youtube.com/embed/NojEW9F96rM" title="CASO DISCORD: JOVENS PRESOS POR CRIMES ASSUSTADORES  - INVESTIGAÇÃO CRIMINAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+					<p>A primeira mesa, às 8h30, vai discutir Desinformação e Populismo Digital. A co-fundadora e diretora-executiva da Pública, Natalia Viana, vai mediar a conversa com a antropóloga Letícia Cesarino e com Nina Santos, pesquisadora e professora da FGV.</p>
+
+					<p>Em seguida, às 10h30, a repórter Juliana Dal Piva e a jornalista e pesquisadora Fabiana Moraes conversam sobre como cobrir o governo de maneira equilibrada, com mediação do repórter da Pública Rubens Valente.</p>
+					
+					<p>À noite, a partir das 19h, o evento será retomado com uma fala da reitora da Pontifícia Universidade Católica de São Paulo, Maria Amália Andery e de Marina Amaral, co-fundadora da Pública. Em seguida, terá início a mesa Colapso climático e antropoceno, com a participação do ativista e escritor Ailton Krenak, da Secretária Nacional de Mudança do Clima do Ministério do Meio Ambiente e Mudança do Clima, Ana Toni, e do climatologista Carlos Nobre. A conversa será mediada por Giovana Girardi, chefe da cobertura socioambiental da Agência Pública.</p>
+
+					<p>As mesas terão transmissão ao vivo pelo Youtube da Pública e também pela TV PUC.</p>
+
+					<p>Confira mais informações sobre o evento e faça sua inscrição gratuita aqui.</p>
+				</article>
+			</section>
+
+			<!-- Sistema de Like -->
+			<section class="like-system">
+				<!-- LikeBtn.com BEGIN -->
+				<span class="likebtn-wrapper" data-theme="custom" data-icon_size="20" data-icon_l="thmb7-u" data-icon_d="thmb7-d" data-icon_l_c="#d4c5fe" data-icon_l_c_v="#f568bb" data-icon_d_c="#d4c5fe" data-icon_d_c_v="#f568bb" data-counter_l_c="#d4c5fe" data-counter_d_c="#d4c5fe" data-bg_c="rgba(250,250,250,0)" data-brdr_c="rgba(223,45,45,0)" data-f_family="VCR" data-identifier="item_1" data-show_like_label="false"></span>
+				<script>
+				(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");
+				</script>
+				<!-- LikeBtn.com END -->
+			</section>
+
+			<!-- Commento Comentario -->
+			<section class="commento-area">
+				<div id="commento"></div>				
+				<script defer src="https://cdn.commento.io/js/commento.js"></script>
+			</section>
+
+			<!-- Popup -->
+			<div id="popup" class="popup">
+				<div class="search">
+					<div class="search-input">
+							<div>
+								<i class="fas fa-search"></i>
+								<i class="fa-solid fa-xmark"></i>
+							</div>
+
+							<input type="text" id="searchInput" placeholder="Encontre posts, tags e autores">
+					</div>
+				</div>
+
+				<div class="search-area">
+					<div class="search-cards">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptate maxime ad cum vel illo minima officia sit voluptas iure praesentium facilis ratione, asperiores? Ipsam corporis debitis voluptatibus alias autem.</div>
+					<div class="search-cards">Gato</div>
+					<div class="search-cards">Pássaro</div>
+					<div class="search-cards">Peixe</div>
+					<div class="search-cards">Coelho</div>
+					<div class="search-cards">Tartaruga</div>
+					<div class="search-cards">Hamster</div>
+					<div class="search-cards">Cavalo</div>
+					<div class="search-not">Busca não encontrada</div>
+				</div>
+
+				<button onclick="closePopup()" class="popup-button"><i class="fa-solid fa-xmark"></i></button>
+			</div>
+
+			<!-- Fundo do lightbox -->
+			<div id="lightboxBackground" class="lightbox-background"></div>
+
+			<!-- Lightbox Aviso -->
+			<div id="aviso-container"></div>
+
+			<!-- Aviso -->
+			<section id="aviso">
+				<section class="aviso-area">
+					<h1>Aviso!</h1>
+			        <p>O propósito deste material é fornecer informações educativas sobre substâncias psicoativas e estratégias de minimização de riscos para os usuários, respaldado pela prerrogativa de expressão assegurada pelo Supremo Tribunal Federal, conforme estabelecido no julgamento da ADPF 187.</p>
+			        
+			        <div>
+			            <button onclick="fecharAviso()">Tenho 18 anos</button>
+			            <button><a href="http://www.google.com">Sair</a></button>
+			        </div>
+			    </section>
+			</section>
+
+			<!-- Roda Pé -->
+			<footer class="roda-pe">
+				<footer class="roda-pe-area">
+					<figure class="roda-pe-logo">
+						<a href='index.html'><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnpkMzlpajJkd2lzYTA3ZmcxZWJiY2p4YnhtOGJkenZvODV4Z2N3OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/M5mms26S07dXGJVXe8/giphy.gif"></a>
+					</figure>
+							
+					<span class="roda-pe-social">
+						<a href=""><i class="fab fa-instagram"></i></a>
+						<a href=""><i class="fab fa-twitter"></i></a>
+						<a href=""><i class="fab fa-facebook-square"></i></a>
+						<a href=""><i class="fab fa-reddit-alien"></i></a>
+					</span>
+
+					<ul class="roda-pe-links">
+						<li><a href='index.html'>Inicio</a></li>
+						<li><a href='entrevista.html'>Entrevista</a></li>
+						<li><a href='topic/musica'>Musica</a></li>
+						<li><a href='topic/politica'>Política</a></li>
+						<li><a href='topic/comportamentos'>Comportamento</a></li>
+						<li><a href='resenha'>Resenha</a></li>
+						<li><a href='sobre'>Sobre</a></li>
+						<li><a href='contato.html'>Contato</a></li>
+					</ul>
+
+					<div class="roda-pe-copy">
+						<p> © 2023 Deltabox | Política de privacidade - Desenvolvido por: <a href="">DeltaBox</a></p>
+					</div>
+				</footer>
+			</footer>
+		</section>	
+	</main>
+
+	<script type="text/javascript">
+	 	function fecharAviso() {
+	        document.getElementById('aviso-container').style.display = 'none';
+	        document.getElementById('aviso').style.display = 'none';
+	    }
+
+		//Scroll Progress
+	    $(document).ready(function(){
+	        $(window).scroll(function() {
+	          updateProgressBar();
+	        });
+
+	        $(window).resize(function() {
+	          updateProgressBar();
+	        });
+	      });
+
+	      function updateProgressBar() {
+	        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	        var scrolled = (winScroll / height) * 100;
+
+	        $("#myBar").css("width", scrolled + "%");
+	      }
+
+	    //Search
+	      $(document).ready(function() {
+	        $('#searchInput').val(''); // Limpa o campo de entrada ao reiniciar a página
+	        $('.search-cards, .search-not').hide(); // Oculta todas as divs "search-cards" e "search-not" inicialmente
+	        $('.search-area').hide(); // Oculta a área de pesquisa ao iniciar a página
+
+	        $('#searchInput').on('input', function() {
+	            var searchText = $(this).val().toLowerCase();
+	            var found = false;
+
+	            if (searchText === 'filetype:search') {
+	                $('.search-cards').fadeIn(500); // Exibe todas as "search-cards" se o texto digitado for "filetype:search"
+	                $('.search-not').fadeOut(500); // Oculta "search-not"
+	                found = true;
+	                $('.search-area').show(); // Exibe a área de pesquisa
+	            } else {
+	                $('.search-cards').each(function() {
+	                    var cardText = $(this).text().toLowerCase();
+	                    if (cardText.includes(searchText)) {
+	                        $(this).fadeIn(500); // Exibe com efeito de opacidade
+	                        found = true;
+	                    } else {
+	                        $(this).fadeOut(500); // Oculta com efeito de opacidade
+	                    }
+	                });
+
+	                if (!found) {
+	                    $('.search-not').fadeIn(500); // Exibe "search-not" se nenhum resultado for encontrado
+	                } else {
+	                    $('.search-not').fadeOut(500); // Oculta "search-not" se algum resultado for encontrado
+	                }
+
+	                // Oculta "search-not" se o texto pesquisado for exatamente igual ao conteúdo dela
+	                if ($('.search-not').text().toLowerCase() === searchText) {
+	                    $('.search-not').fadeOut(500);
+	                }
+
+	                $('.search-area').show(); // Exibe a área de pesquisa
+	            }
+
+	            // Atualiza os ícones de acordo com o texto de pesquisa
+	            updateSearchIcons(searchText);
+	        });
+
+	        $('#searchInput').on('keyup', function(event) {
+	            if (event.keyCode === 8 || event.keyCode === 46) { // Tecla Backspace ou Delete
+	                var searchText = $(this).val().trim();
+	                if (searchText === '') {
+	                    // Oculta as divs "search-cards" e "search-not" com efeito de opacidade durante 0.5 segundos
+	                    $('.search-cards, .search-not').fadeOut(500);
+	                    $('.search-area').hide(); // Oculta a área de pesquisa
+	                }
+
+	                // Atualiza os ícones de acordo com o texto de pesquisa
+	                updateSearchIcons(searchText);
+	            }
+	        });
+
+	        // Evento de clique no ícone "xmark"
+	        $('.fa-xmark').on('click', function() {
+	            $('#searchInput').val(''); // Limpa o campo de entrada
+
+	            // Oculta as divs "search-cards" e "search-not" com efeito de opacidade durante 0.5 segundos
+	            $('.search-cards, .search-not').fadeOut(500);
+
+	            $('.search-input div i:last-child').hide(); // Oculta o ícone "xmark"
+	            $('.search-input div i:first-child').show(); // Exibe o ícone "search"
+	            $('.search-input').css('border-radius', '6px'); // Altera o estilo da borda
+	            $('.search-area').hide(); // Oculta a área de pesquisa
+	        });
+
+	        // Função para atualizar os ícones de pesquisa
+	        function updateSearchIcons(searchText) {
+	            var searchInputDiv = $('.search-input div');
+
+	            if (searchText !== '') {
+	                searchInputDiv.find('i:first-child').css('display', 'none');
+	                searchInputDiv.find('i:last-child').css('display', 'block');
+	                $('.search-input').css('border-radius', '6px 6px 0px 0px'); // Altera o estilo da borda
+	            } else {
+	                searchInputDiv.find('i:first-child').css('display', 'flex');
+	                searchInputDiv.find('i:last-child').css('display', 'none');
+	                $('.search-input').css('border-radius', '6px'); // Altera o estilo da borda
+	                $('.search-area').hide(); // Oculta a área de pesquisa se o campo estiver vazio
+	            }
+	        }
+	    });
+	
+		/*Pop Up*/
+		function openPopup() {
+			document.getElementById('popup').style.display = 'block';
+		    document.getElementById('lightboxBackground').style.display = 'block';
+		};
+
+		function closePopup() {
+			document.getElementById('popup').style.display = 'none';
+			document.getElementById('lightboxBackground').style.display = 'none';
+		};
+
+		//Menu
+	    document.getElementById("toggleMenu").addEventListener("click", function() {
+	      this.classList.toggle("change");
+	    document.getElementById("menuMobile").classList.toggle("menu-mobile-visible");
+	    });
+
+		//Post
+		$(function () {
+		    $(".post-cards").slice(0, 12).show();
+		    $(".load-more").on('click', function (e) {
+		        e.preventDefault();
+		        $(".post-cards:hidden").slice(0, 3).slideDown();
+		        if ($(".post-cards:hidden").length == 0) {
+		            $(".load-more").fadeOut('slow', function() {
+		                $(this).remove(); // Remover o botão load-more da tela
+		            });
+		        }
+		        $('html,body').animate({
+		            scrollTop: $(this).offset().top
+		        }, 1500);
+		        if ( $( ".post-cards:last" ).css('display') == 'block' ) {
+		            $('.load-more').hide();
+		            $('.totop').show();
+		        }  
+		    });    
+		});
+
+		$('a[href=#top]').click(function () {
+		    $('body,html').animate({
+		        scrollTop: 0
+		    }, 600);
+		    return false;
+		});
+
+		$(window).scroll(function () {
+		    if ($(this).scrollTop() > 50) {
+		        $('.totop a').fadeIn();
+		    } else {
+		        $('.totop a').fadeOut();
+		    }
+		});
+	</script>
+</body>
+</html>

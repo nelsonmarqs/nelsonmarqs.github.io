@@ -1,0 +1,256 @@
+/* Home Page */
+@import url('menu.css');
+@import url('search.css');
+@import url('landing-page.css');
+@import url('popup.css');
+@import url('story.css');
+@import url('newsletter.css');
+@import url('post.css');
+@import url('newsletter.css');
+@import url('box-tags.css');
+@import url('roda-pe.css');
+
+/* Tags do Site */
+@import url('post-simples.css');
+@import url('post-especial.css');
+@import url('sobre.css');
+@import url('contato.css');
+@import url('delta-story.css');
+@import url('storys.css');
+@import url('todas-tags.css');
+@import url('tags.css');
+
+/* Fonts */
+@font-face {
+    font-family:BarlowCondensed-Black;
+    src: url('../fonts/BarlowCondensed-Black.ttf');
+}
+
+@font-face {
+    font-family:BarlowCondensed-Bold;
+    src: url('../fonts/BarlowCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family:BarlowCondensed-SemiBold;
+    src: url('../fonts/BarlowCondensed-SemiBold.ttf');
+}
+
+@font-face {
+    font-family:OpenSans-Regular;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family:VCR;
+    src: url('../fonts/VCR.ttf');
+}
+
+@font-face {
+    font-family:univers;
+    src: url('../fonts/univers.ttf');
+}
+
+@font-face {
+    font-family:helvetica;
+    src: url('../fonts/helvetica.otf');
+}
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
+
+li{
+    list-style:none;
+}
+
+html{
+  overflow-y: scroll;
+  scrollbar-color: #d4c5fe #040404;
+  scrollbar-width: 40px;
+    scroll-behavior:smooth;
+    scrollbar-color:#f568bb transparent;
+}
+
+body{
+	background-image: url("https://i.imgur.com/4Ft3zor.png");
+	font-family: arial;
+	color: #d4c5fe;
+}
+
+
+/* Carregamento Home Page */
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:black; /* cor do background que vai ocupar o body */
+    z-index:9999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+
+
+
+
+.text {
+  animation: rgbglitch 4s infinite;
+}
+
+.text02 {
+  animation: rgbglitch 6s infinite;
+}
+
+@keyframes rgbglitch {
+  0% {
+    text-shadow: 
+    2px 0px 2px rgba(255,0,0,0.5),
+    -2px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  12% {
+    text-shadow: 
+    0px 0px 2px rgba(255,0,0,0.5),
+    0px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  25% {
+    text-shadow: 
+    -4px 0px 2px rgba(255,0,0,0.5),
+    2px 2px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  37% {
+    text-shadow: 
+    0px 0px 2px rgba(255,0,0,0.5),
+    0px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  40% {
+    text-shadow: 
+    -0px 4px 2px rgba(255,0,0,0.5),
+    -4px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  42% {
+    text-shadow: 
+    0px 0px 2px rgba(255,0,0,0.5),
+    0px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  43% {
+    text-shadow: 
+    0px 0px 2px rgba(255,0,0,0.5),
+    0px 10px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  44% {
+    text-shadow: 
+    0px 0px 2px rgba(255,0,0,0.5),
+    0px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  46% {
+    text-shadow: 
+    -4px 2px 2px rgba(255,0,0,0.5),
+    -4px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  50% {
+    text-shadow: 
+    -0px 2px 2px rgba(255,0,0,0.5),
+    -2px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  62% {
+    text-shadow: 
+    0px 0px 2px rgba(255,0,0,0.5),
+    0px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  75% {
+    text-shadow: 
+    0px -4px 2px rgba(255,0,0,0.5),
+    2px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  86% {
+    text-shadow: 
+    0px 0px 2px rgba(255,0,0,0.5),
+    0px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  87% {
+    text-shadow: 
+    2px 0px 2px rgba(255,0,0,0.5),
+    7px px 2px rgba(0,255,255,0.5);
+,   1px 1px 0p3 bl3ck
+1; }
+  
+  89% {
+    text-shadow: 
+    0px 0px 2px rgba(255,0,0,0.5),
+    0px 0px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+  
+  100% {text-shadow: 
+    2px 0px 2px rgba(255,0,0,0.5),
+    0px -2px 2px rgba(0,255,255,0.5),
+    3px 3px 1px black;
+  }
+}
