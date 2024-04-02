@@ -21,6 +21,9 @@
     object-fit: cover; /* Para cobrir todo o espaço do contêiner */
     z-index: -1; /* Para colocar o vídeo atrás do conteúdo */
     opacity:0.9;
+    background-image:url('../img/tcs5wn.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .newsletter-area{
