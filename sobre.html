@@ -27,7 +27,7 @@
 			</div>
 				          
 			<div class="menu-logo">
-				<a href='index.html'><img src="https://merry-otter-db3e0a.netlify.app/img/Vector.svg" alt=""></a>
+				<a href='index.html'><img src="img/home-page/menu/icone-menu.png" alt="" loading="lazy"></a>
 			</div>
 				          
 			<div class="menu-social">
@@ -38,7 +38,7 @@
 			</div>
 				          
 			<div class="menu-search">
-				<a onclick="openPopup()"><i class="fas fa-search"></i></a>
+				<a href=""><i class="fas fa-search"></i></a>
 			</div>
 		</nav>
 	</nav>
@@ -72,7 +72,7 @@
 			<section class="menu-mobile-ultimas">
 				<div class="menu-mobile-ultimas-cards">
 					<figure>
-						<img src="https://video-images.vice.com/test-uploads/articles/5eb4761d13ccfa0098f1650f/lede/1588961569764-brioches_S01E01.png?crop=1xw:1xh;center,center" alt="">
+						<img src="https://video-images.vice.com/test-uploads/articles/5eb4761d13ccfa0098f1650f/lede/1588961569764-brioches_S01E01.png?crop=1xw:1xh;center,center" loading="lazy" alt="">
 					</figure>
 
 					<div>
@@ -82,7 +82,7 @@
 
 				<div class="menu-mobile-ultimas-cards">
 					<figure>
-						<img src="https://video-images.vice.com/videos/5fdbf531ee7c0a646d59b57b/lede/1608326105519-vicevwnthumbnailoption1981.jpeg?crop=1xw:1xh;center,center" alt="">
+						<img src="https://video-images.vice.com/videos/5fdbf531ee7c0a646d59b57b/lede/1608326105519-vicevwnthumbnailoption1981.jpeg?crop=1xw:1xh;center,center" loading="lazy" alt="">
 					</figure>
 
 					<div>
@@ -92,7 +92,7 @@
 
 				<div class="menu-mobile-ultimas-cards">
 					<figure>
-						<img src="https://images.squarespace-cdn.com/content/v1/56d6c9b7ab48de761af76d39/1538564308404-9W867S5F46UFH2844AMT/ponyexpress.jpg?format=1500w" alt="">
+						<img src="https://images.squarespace-cdn.com/content/v1/56d6c9b7ab48de761af76d39/1538564308404-9W867S5F46UFH2844AMT/ponyexpress.jpg?format=1500w" loading="lazy" alt="">
 					</figure>
 
 					<div>
@@ -153,36 +153,6 @@
 		</div>
 	</main>
 
-	<!-- Popup -->
-	<div id="popup" class="popup">
-		<div class="search">
-			<div class="search-input">
-				<div>
-					<i class="fas fa-search"></i>
-					<i class="fa-solid fa-xmark"></i>
-				</div>
-				<input type="text" id="searchInput" placeholder="Encontre posts, tags e autores">
-			</div>
-		</div>
-
-		<div class="search-area">
-			<div class="search-cards">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptate maxime ad cum vel illo minima officia sit voluptas iure praesentium facilis ratione, asperiores? Ipsam corporis debitis voluptatibus alias autem.</div>
-			<div class="search-cards">Gato</div>
-			<div class="search-cards">Pássaro</div>
-			<div class="search-cards">Peixe</div>
-			<div class="search-cards">Coelho</div>
-			<div class="search-cards">Tartaruga</div>
-			<div class="search-cards">Hamster</div>
-			<div class="search-cards">Cavalo</div>
-			<div class="search-not">Busca não encontrada</div>
-		</div>
-
-		<button onclick="closePopup()" class="popup-button"><i class="fa-solid fa-xmark"></i></button>
-	</div>
-
-	<!-- Fundo do lightbox -->
-	<div id="lightboxBackground" class="lightbox-background"></div>
-
 	<!-- Roda Pé -->
 	<footer class="roda-pe">
 		<footer class="roda-pe-area">
@@ -228,105 +198,6 @@
 	      this.classList.toggle("change");
 	    document.getElementById("menuMobile").classList.toggle("menu-mobile-visible");
 	    });
-
-	    //Search
-	      $(document).ready(function() {
-	        $('#searchInput').val(''); // Limpa o campo de entrada ao reiniciar a página
-	        $('.search-cards, .search-not').hide(); // Oculta todas as divs "search-cards" e "search-not" inicialmente
-	        $('.search-area').hide(); // Oculta a área de pesquisa ao iniciar a página
-
-	        $('#searchInput').on('input', function() {
-	            var searchText = $(this).val().toLowerCase();
-	            var found = false;
-
-	            if (searchText === 'filetype:search') {
-	                $('.search-cards').fadeIn(500); // Exibe todas as "search-cards" se o texto digitado for "filetype:search"
-	                $('.search-not').fadeOut(500); // Oculta "search-not"
-	                found = true;
-	                $('.search-area').show(); // Exibe a área de pesquisa
-	            } else {
-	                $('.search-cards').each(function() {
-	                    var cardText = $(this).text().toLowerCase();
-	                    if (cardText.includes(searchText)) {
-	                        $(this).fadeIn(500); // Exibe com efeito de opacidade
-	                        found = true;
-	                    } else {
-	                        $(this).fadeOut(500); // Oculta com efeito de opacidade
-	                    }
-	                });
-
-	                if (!found) {
-	                    $('.search-not').fadeIn(500); // Exibe "search-not" se nenhum resultado for encontrado
-	                } else {
-	                    $('.search-not').fadeOut(500); // Oculta "search-not" se algum resultado for encontrado
-	                }
-
-	                // Oculta "search-not" se o texto pesquisado for exatamente igual ao conteúdo dela
-	                if ($('.search-not').text().toLowerCase() === searchText) {
-	                    $('.search-not').fadeOut(500);
-	                }
-
-	                $('.search-area').show(); // Exibe a área de pesquisa
-	            }
-
-	            // Atualiza os ícones de acordo com o texto de pesquisa
-	            updateSearchIcons(searchText);
-	        });
-
-	        $('#searchInput').on('keyup', function(event) {
-	            if (event.keyCode === 8 || event.keyCode === 46) { // Tecla Backspace ou Delete
-	                var searchText = $(this).val().trim();
-	                if (searchText === '') {
-	                    // Oculta as divs "search-cards" e "search-not" com efeito de opacidade durante 0.5 segundos
-	                    $('.search-cards, .search-not').fadeOut(500);
-	                    $('.search-area').hide(); // Oculta a área de pesquisa
-	                }
-
-	                // Atualiza os ícones de acordo com o texto de pesquisa
-	                updateSearchIcons(searchText);
-	            }
-	        });
-
-	        // Evento de clique no ícone "xmark"
-	        $('.fa-xmark').on('click', function() {
-	            $('#searchInput').val(''); // Limpa o campo de entrada
-
-	            // Oculta as divs "search-cards" e "search-not" com efeito de opacidade durante 0.5 segundos
-	            $('.search-cards, .search-not').fadeOut(500);
-
-	            $('.search-input div i:last-child').hide(); // Oculta o ícone "xmark"
-	            $('.search-input div i:first-child').show(); // Exibe o ícone "search"
-	            $('.search-input').css('border-radius', '6px'); // Altera o estilo da borda
-	            $('.search-area').hide(); // Oculta a área de pesquisa
-	        });
-
-	        // Função para atualizar os ícones de pesquisa
-	        function updateSearchIcons(searchText) {
-	            var searchInputDiv = $('.search-input div');
-
-	            if (searchText !== '') {
-	                searchInputDiv.find('i:first-child').css('display', 'none');
-	                searchInputDiv.find('i:last-child').css('display', 'block');
-	                $('.search-input').css('border-radius', '6px 6px 0px 0px'); // Altera o estilo da borda
-	            } else {
-	                searchInputDiv.find('i:first-child').css('display', 'flex');
-	                searchInputDiv.find('i:last-child').css('display', 'none');
-	                $('.search-input').css('border-radius', '6px'); // Altera o estilo da borda
-	                $('.search-area').hide(); // Oculta a área de pesquisa se o campo estiver vazio
-	            }
-	        }
-	    });
-	
-		/*Pop Up*/
-		function openPopup() {
-			document.getElementById('popup').style.display = 'block';
-		    document.getElementById('lightboxBackground').style.display = 'block';
-		};
-
-		function closePopup() {
-			document.getElementById('popup').style.display = 'none';
-			document.getElementById('lightboxBackground').style.display = 'none';
-		};
 	</script>
 </body>
 </html>
