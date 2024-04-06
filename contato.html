@@ -119,29 +119,24 @@
 	</nav>
 
 	<!-- Contato -->
-	<main class="contato">
-		<div class="contato-titulo">
+	<main class="contato-container">
+		<div class="contato">
 			<h1>Contato</h1>
+			<h2>Tem alguma dúvida?</h2>
+			<p>Entre em contato conosco para dúvidas, informações, sugestões e parcerias. <a href="mailto:contato@musebr.com">contato@musebr.com</a></p>
 		</div>
 
-		<div class="contato-descricao">
-			<h2>Tem alguma dúvida?</h2>
-			<p>Entre em contato conosco para dúvidas, informações, sugestões e parcerias. contato@musebr.com</p>
-		</div>
-		
-		<div class="contato-formulario">
-			<form action="enviar_email.php" method="post">
-		        <input type="text" id="nome" name="nome" placeholder="Nome(obrigatório)"><br>
-		        
-		        <input type="email" id="email" name="email" placeholder="Email(obrigatório)"><br>
-		        
-		        <input type="text" id="assunto" name="assunto" placeholder="Assunto"><br>
-		        
-		        <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea><br>
-		        
-		        <input type="submit" value="Enviar Email" id="enviar">
-		    </form>
-		</div>
+		<form class="contato-formulario" action="enviar_formulario.php" method="post">
+			<input type="text" id="nome" name="nome" required placeholder="None"><br>
+
+			<input type="email" id="email" name="email" required placeholder="E-mail"><br>
+		  
+			<input type="text" id="assunto" name="assunto" required placeholder="Assunto"><br>
+		  
+			<textarea id="mensagem" name="mensagem" required placeholder="Mensagem"></textarea><br>
+		  
+			<input type="submit" value="Enviar">
+		</form>
 	</main>
 
 	<!-- Roda Pé -->
