@@ -1,0 +1,135 @@
+.lading-page-story{
+	width:calc(100% - 30px);
+	height:calc(320px + (559.6 - 320) * ((100vw - 320px) / (1399 - 320)));
+	background-image: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(122, 121, 121,1) 25%, rgba(122, 121, 121,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 75%, rgba(122, 121, 121,1) 75%, rgba(122, 121, 121,1) 100%);
+	background-size: 8.00px 8.00px;
+	clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+	transform:translateX(15px);
+	border-radius:6px!important;
+	overflow:hidden;
+	margin-top:30px;
+}
+
+.lading-page-story img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	object-position:left;
+	opacity:0.9;
+}
+
+.lading-page-story-title{
+	display:flex;
+	justify-content:center;
+	transform:translateY(-48px);
+}
+
+.lading-page-story-title h1{
+	height:auto;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-family:VCR;
+	font-size:35px;
+	color:black;
+	text-align:center;
+	text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
+	background:#d4c5fe;
+	padding:10px 20px;
+}
+
+@media(min-width:1400px){
+	.lading-page-story{
+		width:1370px;
+		height:560px;
+		margin:0 auto;
+		margin-top:30px;
+		margin-bottom:30px;
+		transform:translateX(0px);
+	}
+}
+
+/* Delta Post */
+.delta-story{
+	margin-top:25px;
+}
+
+.delta-story-area{
+	display:flex;
+	flex-direction:column;
+	grid-row-gap:24px;
+	padding:0px 15px;
+}
+
+.delta-story-cards{
+	width:100%;
+	height:calc(549.06px + (1228.0853 - 549.06) * ((100vw - 360px) / (767 - 360)));
+	display:none;
+	background-size:cover;
+	border-radius:6px;
+	overflow:hidden;
+	transition:0.3s;
+}
+
+.delta-story-cards div{
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:flex-end;
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.15) 25%, rgba(122, 121, 121,0.15) 25%, rgba(122, 121, 121,0.15) 50%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.15) 75%, rgba(122, 121, 121,0.15) 75%, rgba(122, 121, 121,0.15) 100%);
+  	background-size: 8.00px 8.00px;
+  	padding:15px;
+}
+
+.delta-story-cards div p{
+	font-family:BarlowCondensed-Bold;
+	font-size:30px;
+	text-shadow:3.5px 3.5px 0px black;
+}
+
+.delta-story-cards div p span{
+	background:black;
+}
+
+@media(min-width:768px){
+	.delta-story-area{
+		flex-direction:row;
+		flex-wrap:wrap;
+		grid-column-gap:12px;
+	}
+
+	.delta-story-cards{
+		width:calc(100% / 3 - 8px);
+		height:calc(396px + (518.77 - 396) * ((100vw - 768px) / (991 - 768)));
+	}
+}
+
+@media(min-width:992px){
+	.delta-story-cards{
+		height:calc(523px + ( - 523) * ((100vw - 768px) / (1199 - 768)));
+	}
+}
+
+@media(min-width:1200px){
+	.delta-story-cards{
+		width:calc(100% / 4 - 9px);
+		height:calc(457.5px + (539.5 - 457.5) * ((100vw - 1200px) / (1400 - 1200)));
+	}
+}
+
+@media(min-width:1400px){
+	.delta-story-area{
+		width:1400px;
+		margin:0 auto;
+	}
+
+	.delta-story-cards{
+		width:333.5px;
+		height:539.5px;
+	}
+}
+
+
+delta-story
+delta-story-area
+delta-story-cards
