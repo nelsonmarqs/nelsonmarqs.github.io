@@ -72,7 +72,7 @@
 			text-shadow: 3px 3px 0px black;
 		}
 
-		.Newsletter-area form{
+		.Newsletter-form{
 			width:100%;
 			display:flex;
 			justify-content:center;
@@ -81,7 +81,7 @@
 			grid-gap:15px;
 		}
 
-		.Newsletter-area form input:first-child{
+		.Newsletter-email{
 			width:100%;
 			max-width:278px;
 			height:17px;
@@ -93,12 +93,12 @@
 			padding:0px ;
 		}
 
-		.Newsletter-area form input:first-child:focus{
+		.Newsletter-email:focus{
 			outline:none;
 			color:white;
 		}
 		
-		.Newsletter-area form input:last-child{
+		.Newsletter-inscrevase:last-child{
 			min-width:110px;
 			max-width:110px;
 			height:35px;
@@ -127,7 +127,7 @@
 
 			<p>"Deltabox é uma <span>fanzine</span> online que aborda temas como música, política, cultura pop, sociaedade entre outros! Particie da nossa Newslatter <span>Inscreva-se</span></p>
 			
-			<form name="Newsletter" netlify="">
+			<form name="Newsletter" netlify="" class="Newsletter-form">
 				<input type="email" name="email" required="" class="Newsletter-email">
 				<input type="submit" value="Inscreva-se" id="enviar" class="Newsletter-inscrevase">
 			</form>
