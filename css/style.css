@@ -801,110 +801,109 @@ body{
 }
 
 /*----- Newsletter -----*/
-.Newsletter{
-  width:calc(100% - 30px);
-  height:calc(488px + (410 - 488) * ((100vw - 360px) / (767 - 360)));
-  display:flex;
-  justify-content:center;
-  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
-  border-radius:6px;
-  margin:0 auto;
-  position: relative;
-  overflow: hidden;
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(122, 121, 121,1) 25%, rgba(122, 121, 121,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 75%, rgba(122, 121, 121,1) 75%, rgba(122, 121, 121,1) 100%);
-  background-size: 8.00px 8.00px;
-}
+		.Newsletter{
+			width:calc(100% - 30px);
+			height:calc(488px + (410 - 488) * ((100vw - 360px) / (767 - 360)));
+			display:flex;
+			justify-content:center;
+			clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+			border-radius:6px;
+			margin:0 auto;
+			position: relative;
+    		overflow: hidden;
+    		background-image: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(122, 121, 121,1) 25%, rgba(122, 121, 121,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 75%, rgba(122, 121, 121,1) 75%, rgba(122, 121, 121,1) 100%);
+  			background-size: 8.00px 8.00px;
+		}
 
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; /* Garante que o vídeo esteja por trás do conteúdo */
-  opacity:0.9;
-}
-    
-.Newsletter-area{
-  width:100%;
-  max-width:500px;
-  height:auto;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  grid-gap:15px;
-  padding:0px 20px;
-  margin:0 auto;
-}
-    
-.Newsletter-area a img{
-  width:100%;
-  max-width:229px;
-}
+		.background-video {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    object-fit: cover;
+		    z-index: -1; /* Garante que o vídeo esteja por trás do conteúdo */
+		    opacity:0.9;
+		}
+		
+		.Newsletter-area{
+			width:100%;
+			max-width:500px;
+			height:auto;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+			grid-gap:15px;
+			padding:0px 20px;
+			margin:0 auto;
+		}
+		
+		.Newsletter-area a img{
+			width:100%;
+			max-width:229px;
+		}
 
-.Newsletter-area p{
-  font-family:OpenSans-Regular;
-  font-size:16px;
-  text-align:center;
-  text-shadow:1px 1px 0px black;
-}
+		.Newsletter-area p{
+			font-family:OpenSans-Regular;
+			font-size:16px;
+			text-align:center;
+			text-shadow:1px 1px 0px black;
+		}
 
-.Newsletter-area p span:first-child{
-  text-decoration:underline;
-}
+		.Newsletter-area p span:first-child{
+			text-decoration:underline;
+		}
 
-.Newsletter-area p span:last-child{
-  font-family:VCR;
-  font-weight:bolder;
-  color: #f568bb;
-  text-shadow: 3px 3px 0px black;
-}
+		.Newsletter-area p span:last-child{
+			font-family:VCR;
+			font-weight:bolder;
+			color: #f568bb;
+			text-shadow: 3px 3px 0px black;
+		}
 
-.Newsletter-area form{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:flex-end;
-  flex-wrap:wrap;
-  grid-gap:15px;
-}
+		.Newsletter-form{
+			width:100%;
+			display:flex;
+			justify-content:center;
+			align-items:flex-end;
+			flex-wrap:wrap;
+			grid-gap:15px;
+		}
 
-.Newsletter-email{
-  width:100%;
-  max-width:278px;
-  height:17px;
-  font-family:VCR;
-  font-size:13px;
-  background:transparent;
-  border:none;
-  border-bottom:2px solid white;
-  padding:0px;
-}
+		.Newsletter-email{
+			width:100%;
+			max-width:278px;
+			height:17px;
+			font-family:VCR;
+			font-size:13px;
+			background:transparent;
+			border:none;
+			border-bottom:2px solid white;
+			padding:0px ;
+		}
 
-.Newsletter-email:focus{
-  outline:none;
-  color:white;
-}
-    
-.Newsletter-inscrevase{
-  min-width:110px;
-  max-width:110px;
-  height:35px;
-  border:2px solid black;
-  box-shadow:4px 4px 0px black;
-  border-radius:6px;
-  font-family:VCR;
-  animation: ButtomAnimation 8s infinite;
-}
+		.Newsletter-email:focus{
+			outline:none;
+			color:white;
+		}
+		
+		.Newsletter-inscrevase:last-child{
+			min-width:110px;
+			max-width:110px;
+			height:35px;
+			border:2px solid black;
+			box-shadow:4px 4px 0px black;
+			border-radius:6px;
+			font-family:VCR;
+			animation: ButtomAnimation 8s infinite;
+		}
 
-@media(min-width:768px){
-  .Newsletter{
-    height:408px;
-  }
-}
-
+		@media(min-width:768px){
+			.Newsletter{
+				height:408px;
+			}
+		}
 /*----- Post -----*/
 .post-area{
   width:100%;
