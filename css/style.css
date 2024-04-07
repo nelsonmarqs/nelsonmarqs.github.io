@@ -880,7 +880,8 @@ body{
   background:transparent;
   border:none;
   border-bottom:2px solid white;
-  padding:0px ;
+  padding:0px;
+  display:none;
 }
 
 .Newsletter-email:focus{
