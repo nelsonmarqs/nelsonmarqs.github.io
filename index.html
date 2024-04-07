@@ -203,22 +203,18 @@
 	</section>
 
 	<!-- Newsletter -->
-	<section class="newsletter">
-		 <section class="newsletter-fundo">
-		 	<video autoplay loop><source src="mp4/newslatter.mp4" type="video/mp4"></video>
-		 </section>
+	<section class="Newsletter">
+		 <video autoplay loop muted playsinline class="background-video">
+        	<source src="mp4/newslatter.mp4" type="video/mp4">
+    	</video>
 
-		<section class="newsletter-area">
-			<figure>
-				<a href=""><img src="img/home-page/newslatter/logo.png" loading="lazy" alt=""></a>
-			</figure>
+		<section class="Newsletter-area">
+			<a href=""><img src="https://boxbuzz.netlify.app/img/home-page/newslatter/logo.png" alt=""></a>
+
+			<p>"Deltabox é uma <span>fanzine</span> online que aborda temas como música, política, cultura pop, sociaedade entre outros! Particie da nossa Newslatter <span>Inscreva-se</span></p>
 			
-			<div>
-				<p>"Deltabox é uma <span>fanzine</span> online que aborda temas como música, política, cultura pop, sociaedade entre outros! Particie da nossa Newslatter <a href="">Inscreva-se</a></p>
-			</div>
-
-			<form name="Newsletter" netlify>
-				<input type="email" name="email" required>
+			<form name="Newsletter" netlify="">
+				<input type="email" name="email" required="">
 				<input type="submit" value="Inscreva-se" id="enviar">
 			</form>
 		</section>
