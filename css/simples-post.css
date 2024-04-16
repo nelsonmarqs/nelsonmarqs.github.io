@@ -47,7 +47,7 @@
 .progress-container{
 	width: 100%;
 	position: fixed;
-	top: 84px;
+	top: 83px;
 	z-index:81;
 	margin-left:4px;
 }
