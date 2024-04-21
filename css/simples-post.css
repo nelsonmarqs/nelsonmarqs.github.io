@@ -1,5 +1,63 @@
-div#disqus_thread iframe[sandbox] {
-        max-height: 0px !important;
+#disqus_thread {
+  overflow: hidden;
+
+  iframe {
+  	margin-top: -200px;
+    margin-bottom: -95px;
+  }
+}
+
+#disqus_thread{
+	width:calc(100% - 30px);
+	max-width:486px;
+	margin:0 auto;
+	margin-bottom:18px;
+}
+
+@media(min-width:768px){
+	#disqus_thread {
+	  overflow: hidden;
+
+	  iframe {
+	  	margin-top: -290px;
+	    margin-bottom: -95px;
+	  }
+	}
+
+	#disqus_thread{
+		max-width:517px;
+		margin-bottom:18px;
+		transform:translateX(89px);
+	}
+}
+
+.post-menu .dropdown .post-menu--refresh{
+	border:1px solid lime;
+}
+
+@media(min-width:992px){
+	#disqus_thread {
+	  overflow: hidden;
+
+	  iframe {
+	  	margin-top: -198px;
+	    margin-bottom: -95px;
+	  }
+	}
+
+	#disqus_thread{
+		max-width:579px;
+		margin-top:30px;
+		margin-bottom:28px;
+		transform:translateX(-4px);
+	}
+}
+
+@media(min-width:1200px){
+	#disqus_thread{
+		max-width:712px;
+		transform:translateX(4px);
+	}
 }
 
 /* Simples Post */
