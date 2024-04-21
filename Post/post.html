@@ -315,26 +315,34 @@
 			<div id="disqus_thread"></div>
 			<script>
 			    var disqus_config = function () {
-			    this.page.url = "http://www.boxbuzz.com.br/post/post.html";
+			    this.page.url = "https://www.boxbuzz.com.br/post/post.html";
 			    this.page.identifier = "simples-post-01";
 			    };
 
 			    (function() { // DON'T EDIT BELOW THIS LINE
 			    var d = document, s = d.createElement('script');
-			    s.src = 'https://EXAMPLE.disqus.com/embed.js';
+			    s.src = 'https://https-boxbuzz-com-br.disqus.com/embed.js';
 			    s.setAttribute('data-timestamp', +new Date());
 			    (d.head || d.body).appendChild(s);
 			    })();
 			</script>
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-			<script id="dsq-count-scr" src="//EXAMPLE.disqus.com/count.js" async></script>
+			<script id="dsq-count-scr" src="//https-boxbuzz-com-br.disqus.com/count.js" async></script>
+			<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var collapseDiv = document.querySelector('.post-menu-item.collapse');
+        if (collapseDiv) {
+            collapseDiv.style.display = 'none';
+        }
+    });
+</script>
 
 			<!-- Lightbox Aviso -->
-			<div id="aviso-container"></div>
+			<div id="aviso-container" style="display:none;"></div>
 
 			<!-- Aviso -->
-			<section id="aviso">
+			<section id="aviso" style="display:none;">
 				<section class="aviso-area">
 					<h1>Aviso!</h1>
 					<p>O propósito deste material é fornecer informações educativas sobre substâncias psicoativas e estratégias de minimização de riscos para os usuários, respaldado pela prerrogativa de expressão assegurada pelo Supremo Tribunal Federal, conforme estabelecido no julgamento da ADPF 187.</p>
@@ -379,16 +387,16 @@
 		</section>	
 	</main>
 
-	//Mp3-Script
+	<!-- Mp3-Script -->
 	<script src="script.js"></script>
 	
-	//Fontawesome
+	<!-- Fontawesome -->
 	<script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"></script>
 	
-	//Jquary
+	<!-- Jquary -->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-	//Aviso
+	<!-- Aviso -->
 	<script>
 		function fecharAviso() {
 	        document.getElementById('aviso-container').style.display = 'none';
@@ -396,7 +404,7 @@
 	    }
 	</script>
 	
-	//Scroll Progresso
+	<!-- Scroll Progresso -->
 	<script>
 		//Scroll Progress
 	    $(document).ready(function(){
@@ -418,7 +426,7 @@
 	      }
 	</script>
 
-	//Popup
+	<!-- Popup -->
 	<script>
 		/*Pop Up*/
 		function openPopup() {
@@ -432,7 +440,7 @@
 		};	
 	</script>
 
-	//Menu
+	<!-- Menu -->
 	<script>
     // Menu
     function toggleMenu() {
@@ -445,7 +453,7 @@
     document.querySelector('.menu-sanduiche').addEventListener('click', toggleMenu);
 	</script>
 	
-	//Slide
+	<!-- Slide -->
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			const slideArea = document.querySelector(".slide-imagem-area");
