@@ -927,6 +927,41 @@
 	}
 }
 
+#slide-imagem-main{
+	display:block!important;
+	padding:0px!important;
+}
+
+#slide-imagem-main .slide-imagem{
+	width:100%!important;
+	max-width:486!important;
+}
+
+@media(min-width:768px){
+	#slide-imagem-main .slide-imagem{
+		min-width:517px!important;
+		max-width:517px!important;
+		transform:translateX(0px)!important;
+	}
+}
+
+@media(min-width:992px){
+	#slide-imagem-main .slide-imagem{
+		min-width:577px!important;
+		max-width:577px!important;
+		transform:translateX(0px)!important;
+	}
+}
+
+@media(min-width:1200px){
+	#slide-imagem-main .slide-imagem{
+		min-widht:710px!important;
+		max-width:710px!important;
+		transform:translateX(0px)!important;
+	}
+}
+
+/*----- Slide Imagem -----*/
 .slide-imagem{
 	width: 100%;
 	max-width:486px;
