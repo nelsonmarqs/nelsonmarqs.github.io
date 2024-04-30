@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home | BoxBuzz</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/menu/favicon.ico"/>
+</head>
+<body>
+    <div class="slide-imagem">
+        <div class="slide-imagem-area">
+            <div class="slide-imagem-cards" id="si-01"></div>
+            
+            <div class="slide-imagem-cards" id="si-02"></div>
+            
+            <div class="slide-imagem-cards" id="si-03"></div>
+            
+            <div class="slide-imagem-cards" id="si-04"></div>
+
+            <div class="slide-imagem-cards" id="si-05"></div>
+        </div>
+        <button class="s-l"><</button>
+        <button class="s-r">></button>
+    </div>
+
+    <div class="slide-bullets">
+        <a href="#si-01">•</a>
+        <a href="#si-02">•</a>
+        <a href="#si-03">•</a>
+        <a href="#si-04">•</a>
+        <a href="#si-05">•</a>
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const slideArea = document.querySelector(".slide-imagem-area");
+    const slideCards = document.querySelectorAll(".slide-imagem-cards");
+    const slideRightBtn = document.querySelector(".s-r");
+    const slideLeftBtn = document.querySelector(".s-l");
+    const bullets = document.querySelectorAll(".slide-bullets a");
+
+    let currentIndex = 0;
+
+    function updateBullets() {
+        bullets.forEach((bullet, index) => {
+            if (index === currentIndex) {
+                bullet.classList.add("active");
+            } else {
+                bullet.classList.remove("active");
+            }
+        });
+    }
+
+    function slideRight() {
+        if (currentIndex < slideCards.length - 1) {
+            currentIndex++;
+            slideArea.scrollTo({
+                left: slideCards[currentIndex].offsetLeft,
+                behavior: "smooth"
+            });
+            updateBullets();
+        }
+    }
+
+    function slideLeft() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            slideArea.scrollTo({
+                left: slideCards[currentIndex].offsetLeft,
+                behavior: "smooth"
+            });
+            updateBullets();
+        }
+    }
+
+    slideRightBtn.addEventListener("click", slideRight);
+    slideLeftBtn.addEventListener("click", slideLeft);
+
+    // Inicialize a primeira bala como ativa
+    bullets[currentIndex].classList.add("active");
+});
+    </script>
+</body>
+</html>
