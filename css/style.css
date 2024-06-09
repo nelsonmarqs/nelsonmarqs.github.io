@@ -215,6 +215,7 @@ body {
 .menu-explorar h1{
   font-family:BarlowCondensed-Bold;
   font-size:50px;
+  margin-left:9px;
 }
 
 .menu-explorar hr{
@@ -245,6 +246,7 @@ body {
 .menu-series h1{
   font-family:BarlowCondensed-Bold;
   font-size:50px;
+  margin-left:9px;
 }
 
 .menu-series hr{
@@ -318,13 +320,17 @@ body {
   
   .menu-explorar{
     width:20%;
-    padding-left:21px;
   }
 
   .menu-series{
     width:20%;
     margin-top:0px;
   }
+    
+    .menu-explorar h1,
+    .menu-series h1{
+      margin-left:0;
+    }
 
   .menu-ultimas{
     width:calc(60% - 30px);
@@ -646,10 +652,6 @@ body {
 }
 
 @media(min-width:992px){
-  .story-h1{
-    justify-content:flex-end;
-  }
-
   .story-cards{
     min-width:calc(173px + (210 - 173) * ((100vw - 992px) / (1199 - 992)));
     max-width:calc(173px + (210 - 173) * ((100vw - 992px) / (1199 - 992)));
@@ -676,6 +678,12 @@ body {
 }
 
 @media(min-width:1400px){
+  .story-h1{
+    width:1400px;
+    margin:0 auto;
+    margin-top:21px;
+  }
+
   .story-area{
     max-width:1400px;
     min-width:1400px;
