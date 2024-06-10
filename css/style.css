@@ -226,6 +226,7 @@ body {
   font-family:OpenSans-Regular;
   font-size:20px;
   margin-bottom:10px;
+  font-weight:bolder;
 }
 
 .menu-explorar a:hover{
@@ -257,6 +258,7 @@ body {
   font-family:OpenSans-Regular;
   font-size:20px;
   margin-bottom:10px;
+  font-weight:bolder;
 }
 
 .menu-series a:hover{
@@ -700,7 +702,7 @@ body {
 
 /*----- Newsletter -----*/
 #newsletter{
-  margin:30px 0px;
+  margin:50px 0px;
 }
 
 .newsletter {
@@ -1024,6 +1026,11 @@ body {
   font-size:18px;
   padding-top:21px;
   padding-bottom:43px;
+}
+
+.sub-roda-pe-area p span{
+  text-decoration:underline;
+  text-decoration-color:#f568bb;
 }
     
 .sub-roda-pe-list-01{
