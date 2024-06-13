@@ -10,39 +10,62 @@
     <style>
         .faq-area{
             width:100%;
-            max-width:672px;
             padding:0px 15px;
             margin:0 auto;
             padding-top:80px;
         }
 
         .faq-area h1{
+            max-width:1246px;
             font-family:BarlowCondensed-Bold;
-            font-size:44px;
+            font-size:55.9px;
             text-align:center;
         }
 
         .faq-descricao{
+            max-width:672px;
             font-family:OpenSans-Regular;
             font-size:18px;
+            margin:0 auto;
             margin-top:44px;
             margin-bottom:75px;
             line-height:29px;
         }
 
+        .faq-descricao span{
+            text-decoration:underline;
+            text-decoration-color:#f568bb;
+        }
+
         details{
-            border:1px solid rgba(255,255,255,0.3);
+            max-width:672px;
+            border:1px solid #d4c5fe;
             padding:21px 20px;
-            margin-bottom:35px;
             border-radius:6px;
+            cursor:pointer;
+            margin:0 auto;
+            margin-bottom:35px;
         }
 
         details:nth-child(6){
             margin-bottom:0px;
         }
 
+        details summary{
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            font-family:BarlowCondensed-Bold;
+            font-size:26.9px;
+        }
+
         details p{
-            margin-top:30px;
+            margin-top:15px;
+            cursor:default;
+            font-size:17px;
+            font-family:OpenSans-Regular;
+            line-height:29px;
         }
 
         details[open] summary ~ * {
@@ -63,7 +86,7 @@
 
         @media(min-width:768px){
             .faq-area h1{
-                font-size:62px;
+                font-size:89.3px;
             }
         }
     </style>
@@ -181,7 +204,7 @@
         <!-- Faq -->
         <main class="faq-area">
             <h1>Suporte/Perguntas frequentes</h1>
-            <p class="faq-descricao">Olá, obrigado por acessar o BoxBuzz. Estamos aqui para fornecer informações detalhadas sobre como você pode solicitar a remoção de postagens que infrinjam direitos autorais e pessoais. Além disso, explicaremos o processo para anunciar em nosso site, aproveitando nossas diversas opções de publicidade para promover seu conteúdo. Se você tiver alguma dúvida ou precisar de assistência, nossa equipe de suporte está à disposição para ajudar.</p>
+            <p class="faq-descricao">Olá, obrigado por acessar o <span>BoxBuzz</span>. Estamos aqui para fornecer informações detalhadas sobre como você pode solicitar a remoção de postagens que infrinjam direitos autorais e pessoais. Além disso, explicaremos o processo para anunciar em nosso site, aproveitando nossas diversas opções de publicidade para promover seu conteúdo. Se você tiver alguma dúvida ou precisar de assistência, nossa equipe de suporte está à disposição para ajudar.</p>
 
             <details>
               <summary>Como funcionam as assinaturas pagas?</summary>
