@@ -34,7 +34,7 @@
      
      <content:encoded><![CDATA[
         Conteúdo completo do post com HTML, incluindo <br> para quebras de linha.
-        <br>
+        <br><br>
         Segunda linha do conteúdo.
       ]]></content:encoded>
       <pubDate>Thu, 13 Jun 2024 09:00:00 +0000</pubDate>
