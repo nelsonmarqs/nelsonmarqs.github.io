@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Seu Site</title>
+    <link>https://www.seusite.com</link>
+    <description>Descrição do seu site</description>
+    <language>pt-BR</language>
+    <lastBuildDate>Fri, 14 Jun 2024 09:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>Título do Primeiro Post</title>
+      <link>https://www.seusite.com/post1</link>
+      <description>Descrição do primeiro post</description>
+      <pubDate>Thu, 13 Jun 2024 09:00:00 +0000</pubDate>
+      <guid>https://www.seusite.com/post1</guid>
+    </item>
+
+    <item>
+      <title>Título do Segundo Post</title>
+      <link>https://www.seusite.com/post2</link>
+      <description>Descrição do segundo post</description>
+      <pubDate>Fri, 14 Jun 2024 09:00:00 +0000</pubDate>
+      <guid>https://www.seusite.com/post2</guid>
+    </item>
+
+    <!-- Adicione mais itens aqui -->
+
+  </channel>
+</rss>
