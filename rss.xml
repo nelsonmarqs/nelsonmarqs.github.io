@@ -6,15 +6,7 @@
     <description>O BoxBuzz Explorando o impacto da tecnologia, oferecendo insights sobre cultura pop, nostalgia, ciência, música, jogos e diversidade, celebrando a inovação e conexões que moldam o futuro, sem esquecer do passado.</description>
     <language>pt-BR</language>
     <lastBuildDate>Fri, 14 Jun 2024 09:00:00 +0000</lastBuildDate>
-
-    <item>
-      <title>Título do Segundo Post</title>
-      <link>https://www.seusite.com/post2</link>
-      <description>Descrição do segundo post</description>
-      <pubDate>Fri, 14 Jun 2024 09:00:00 +0000</pubDate>
-      <guid>https://www.seusite.com/post2</guid>
-    </item>
-
+    
     <item>
       <title>Participe do evento de 13 anos da Pública em São Paulo</title>
       <description>
@@ -41,7 +33,7 @@
       <pubDate>Sun, 09 Apr 2023 19:25:03 -0400</pubDate>
       <guid isPermaLink="false">https://boxbuzz.com.br/post/post.html</guid>
       <category>JPG</category>
-      <media:thumbnail url="https://i0.wp.com/apublica.org/wp-content/uploads/2024/02/Capa-alternativa_Penha-em-Santa-Catarina-atropela-lei-ambiental-para-virar-%E2%80%98Orlando-brasileira-1-1.jpg"/>
+      <media:thumbnail url="https://img.buzzfeed.com/buzzfeed-static/static/2023-04/7/15/tmp/6d5a40e052ab/tmp-name-3-1125-1680880901-0_dblbig.jpg"/>
       <dc:creator>Nelson Marques</dc:creator>
     </item>
   </channel>
