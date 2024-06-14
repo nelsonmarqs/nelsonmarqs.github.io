@@ -8,6 +8,14 @@
     <lastBuildDate>Fri, 14 Jun 2024 09:00:00 +0000</lastBuildDate>
 
     <item>
+      <title>Título do Segundo Post</title>
+      <link>https://www.seusite.com/post2</link>
+      <description>Descrição do segundo post</description>
+      <pubDate>Fri, 14 Jun 2024 09:00:00 +0000</pubDate>
+      <guid>https://www.seusite.com/post2</guid>
+    </item>
+    
+    <item>
       <title>Participe do evento de 13 anos da Pública em São Paulo</title>
       <link>https://boxbuzz.com.br/post/post.html</link>
       <description>
@@ -35,16 +43,5 @@
       <pubDate>Thu, 13 Jun 2024 09:00:00 +0000</pubDate>
       <guid>https://www.seusite.com/post1</guid>
     </item>
-
-    <item>
-      <title>Título do Segundo Post</title>
-      <link>https://www.seusite.com/post2</link>
-      <description>Descrição do segundo post</description>
-      <pubDate>Fri, 14 Jun 2024 09:00:00 +0000</pubDate>
-      <guid>https://www.seusite.com/post2</guid>
-    </item>
-
-    <!-- Adicione mais itens aqui -->
-
   </channel>
 </rss>
