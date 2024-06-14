@@ -13,7 +13,7 @@
       <content:encoded>
         <![CDATA[
         <audio id="music" preload="true">
-          <source src="../mp3/radio.mp3">
+          <source src="https://boxbuzz.com.br/mp3/radio.mp3">
         </audio>
         <img src="https://i0.wp.com/apublica.org/wp-content/uploads/2024/02/Capa-alternativa_Penha-em-Santa-Catarina-atropela-lei-ambiental-para-virar-%E2%80%98Orlando-brasileira-1-1.jpg" alt=""/>
         <p>Defender e fortalecer a democracia é um trabalho constante, para o qual o jornalismo é imprescindível. A defesa da democracia também passa por temas cada vez mais urgentes em nossa sociedade, como a emergência climática e o poder das big techs e dos algoritmos.</p>
