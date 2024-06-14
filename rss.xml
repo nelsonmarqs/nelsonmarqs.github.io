@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>Seu Site</title>
-    <link>https://www.seusite.com</link>
-    <description>Descrição do seu site</description>
+    <title>BoxBuzz</title>
+    <link>https://boxbuzz.com.br/</link>
+    <description>O BoxBuzz Explorando o impacto da tecnologia, oferecendo insights sobre cultura pop, nostalgia, ciência, música, jogos e diversidade, celebrando a inovação e conexões que moldam o futuro, sem esquecer do passado.</description>
     <language>pt-BR</language>
     <lastBuildDate>Fri, 14 Jun 2024 09:00:00 +0000</lastBuildDate>
 
     <item>
-      <title>Título do Primeiro Post</title>
-      <link>https://www.seusite.com/post1</link>
-      <description>Descrição do primeiro post</description>
+      <title>Participe do evento de 13 anos da Pública em São Paulo</title>
+      <link>https://boxbuzz.com.br/post/post.html</link>
+      <description>A Agência Pública realizará um evento comemorativo de seus 13 anos na PUC-SP, focado na defesa da democracia frente a desafios como mudanças climáticas e influência das big techs. O encontro incluirá debates sobre desinformação, cobertura governamental e colapso climático, com participação de especialistas como Ailton Krenak e Ana Toni. O evento terá mesas pela manhã e tarde, além de transmissão ao vivo online.</description>
       <pubDate>Thu, 13 Jun 2024 09:00:00 +0000</pubDate>
-      <guid>https://www.seusite.com/post1</guid>
+      <guid>https://boxbuzz.com.br/post/post.html</guid>
     </item>
 
     <item>
