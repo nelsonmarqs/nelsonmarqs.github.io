@@ -32,7 +32,8 @@
             </div>
         </div>
     </nav>
-
+    
+    
     <!-- Menu Mobile -->
     <div class="menu-mobile">
         <div class="menu-mobile-area">
@@ -110,13 +111,13 @@
     </div>
     
     <!-- Contato -->
-    <main class="contato-container">
+    <main class="contato-container" id="Direitos-de-Uso Direitos-Autorais Anuncie">
         <div class="contato">
             <h1>Contato</h1>
             
             <h2>Tem alguma dúvida?</h2>
             
-            <p>Entre em contato conosco para dúvidas, informações, sugestões e parcerias.<a href=mailto:contato@musebr.com>contato@musebr.com</a>
+            <p>Entre em contato conosco para dúvidas, informações, sugestões e parcerias. <a href="mailto:contatoboxbuzz@gmail.com">contatoboxbuzz@gmail.com</a>
         </div>
 
         <form class="contato-formulario" name="Contato" netlify>
@@ -129,7 +130,7 @@
             <input type="submit" value="Enviar">
         </form>
     </main>
-    
+
     <!-- Sub Roda Pé  -->
     <div class="sub-roda-pe">
         <div class="sub-roda-pe-area">
@@ -221,6 +222,24 @@
         }
         
         document.querySelector('.menu-sanduiche').addEventListener('click', toggleMenu);
+    </script>
+
+    <!-- Texto input e Scroll Lateral -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollPosition = 364;
+            var hash = window.location.hash;
+
+            if (hash === '#Direitos-de-Uso') {
+                document.getElementById('assunto').value = "Eliminar Postagens que Violam Direitos de Uso";
+            } else if (hash === '#Direitos-Autorais') {
+                document.getElementById('assunto').value = "Remoção de Conteúdos de Direitos Autorais";
+            } else if (hash === '#Anuncie') {
+                document.getElementById('assunto').value = "Anuncie na BoxBuzz";
+            }
+
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+        });
     </script>
 </body>
 </html>
