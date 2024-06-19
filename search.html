@@ -299,6 +299,15 @@
         <!-- Jquery -->
         <script src=https://code.jquery.com/jquery-3.7.1.min.js></script>
         
+        <!-- Pre Loading -->
+        <script>
+            $(window).on('load', function () {
+                $('#preloader .inner').fadeOut();
+                $('#preloader').delay(10).fadeOut('slow'); 
+                $('body').delay(10).css({'overflow': 'visible'});
+            })
+        </script>
+
         <!-- Js Menu -->
         <script>
             function toggleMenu() {
