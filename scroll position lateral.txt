@@ -1,0 +1,8 @@
+        <script>
+        document.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            document.getElementById('scroll-counter').innerText = 'Scroll Position: ' + scrollPosition;
+        });
+    </script>
+
+    <div id="scroll-counter" style="position:fixed;">Scroll Position: 0</div>

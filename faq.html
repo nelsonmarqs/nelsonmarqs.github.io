@@ -1,0 +1,355 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FAQ | BoxBuzz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/menu/favicon.ico"/>
+    <style>
+        .faq-area{
+            width:100%;
+            padding:0px 15px;
+            margin:0 auto;
+            padding-top:80px;
+        }
+
+        .faq-area h1{
+            font-family:BarlowCondensed-Bold;
+            font-size:55.9px;
+            text-align:center;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            word-wrap: break-word;
+        }
+
+        .faq-descricao{
+            max-width:672px;
+            font-family:OpenSans-Regular;
+            font-size:18px;
+            line-height:31px;
+            margin:0 auto;
+            margin-top:44px;
+            margin-bottom:75px;
+        }
+
+        .faq-descricao span{
+            text-decoration:underline;
+            text-decoration-color:#f568bb;
+        }
+
+        details{
+            max-width:672px;
+            border:1px solid #d4c5fe;
+            padding:21px 20px;
+            border-radius:6px;
+            cursor:pointer;
+            margin:0 auto;
+            margin-bottom:35px;
+        }
+
+        details:nth-child(6){
+            margin-bottom:0px;
+        }
+
+        details summary{
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            font-family:BarlowCondensed-Bold;
+            font-size:26.9px;
+        }
+
+        details p{
+            margin-top:15px;
+            cursor:default;
+            font-size:15px;
+            line-height:25px;
+            font-family:OpenSans-Regular;
+        }
+
+        details p a{
+            width:110px;
+            height:35px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#d4c5fe;
+            border-radius:6px;
+            color:black;
+            text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
+            margin:0 auto;
+            margin-top:18px;
+            animation: ButtomAnimation 8s infinite;
+            margin-bottom:15px;
+            font-size:12px;
+            font-weight:bolder;
+            font-family:VCR;
+            letter-spacing:2px;
+        }
+
+        details[open] summary ~ * {
+          animation: sweep 0.5s ease-in-out;
+        }
+
+        @keyframes sweep {
+            0% {
+                opacity: 0;
+                transform:translateY(-5px);
+            }
+          
+            100% {
+                opacity: 1;
+                transform:translateY(0px);
+            }
+        }
+
+        @media(min-width:768px){
+            .faq-area h1{
+                font-size:89.3px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <!-- início do preloader -->
+        <div id="preloader">
+            <div class="inner">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI5YjY4aXd0Mmtpa3ZpeHVmOTh6cG0zNG5xdmd5M202dndvbzZteCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Trs5pThjd2WqSRlJsL/source.gif" width="95px" loading="lazy">
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <nav class="menu">
+            <div class="menu-area">
+                <div class="menu-sanduiche">
+                    <span class="sanduiche-01"></span>
+                    <span class="sanduiche-02"></span>
+                    <span class="sanduiche-03"></span>
+                </div>
+
+                <div class="menu-icone">
+                    <a href='https://boxbuzz.com.br/'><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI5YjY4aXd0Mmtpa3ZpeHVmOTh6cG0zNG5xdmd5M202dndvbzZteCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Trs5pThjd2WqSRlJsL/source.gif" alt="Logo do site, desenho de um caixa de chop suey" loading="lazy"></a>
+                </div>
+
+                <div class="menu-social">
+                    <a target="_blank" href="https://www.instagram.com/boxbuzz/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://x.com/boxbuzzoficial"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61561175630300"><i class="fab fa-facebook-square"></i></a>
+                    <a target="_blank" href="https://www.reddit.com/r/BoxBuzz/"><i class="fab fa-reddit-alien"></i></a>
+                </div>
+
+                <div class="menu-pesquisa">
+                    <a href="file:///C:/Users/Nelson/Desktop/BoxBuzz/search.html"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </nav>
+
+         <!-- Menu Mobile -->
+        <div class="menu-mobile">
+            <div class="menu-mobile-area">
+                <div class="menu-mobile-bloco">
+                    <div class="menu-explorar">
+                        <h1 class="glitch-4044" title="Explorar">Explorar</h1>
+
+                        <hr>
+
+                        <a href="tags/explorar/comportamento.html">Comportamento</a>
+                        <a href="tags/explorar/filmes-e-tv.html">Filmes e TV</a>
+                        <a href="tags/explorar/musica.html">Música</a>
+                        <a href="tags/explorar/drogas.html">Drogas</a>
+                        <a href="tags/explorar/games.html">Games</a>
+                        <a href="tags/explorar/politica.html">Política</a>
+                    </div>
+
+                    <div class="menu-series">
+                        <h1 class="glitch-4044" title="Series">Series</h1>
+                        
+                        <hr>
+                        
+                        <a href="tags/series/box-doc.html">Box.doc</a>
+                        <a href="tags/series/entrevista.html">Entrevista</a>
+                        <a href="tags/series/retro-rewind.html">Retro Rewind</a>
+                        <a href="tags/series/game-changers.html">Game Changers</a>
+                    </div>
+
+                    <div class="menu-ultimas">
+                        <div>
+                            <picture>
+                                <img src="https://video-images.vice.com/test-uploads/articles/5eb4761d13ccfa0098f1650f/lede/1588961569764-brioches_S01E01.png?crop=1xw:1xh;center,center" alt="" loading="lazy">
+                            </picture>
+                            
+                            <p><span><a href="#">Congelamento de óvulos: é pra mim?</a></span></p>
+                        </div>
+
+                        <div>
+                            <picture>
+                                <img src="https://video-images.vice.com/test-uploads/articles/5eb4761d13ccfa0098f1650f/lede/1588961569764-brioches_S01E01.png?crop=1xw:1xh;center,center" alt="" loading="lazy">
+                            </picture>
+                            
+                            <p><span><a href="#">Congelamento de óvulos: é pra mim?</a></span></p>
+                        </div>
+
+                        <div>
+                            <picture>
+                                <img src="https://video-images.vice.com/test-uploads/articles/5eb4761d13ccfa0098f1650f/lede/1588961569764-brioches_S01E01.png?crop=1xw:1xh;center,center" alt="" loading="lazy">
+                            </picture>
+                            
+                            <p><span><a href="#">Congelamento de óvulos: é pra mim?</a></span></p>
+                        </div>
+                    </div>
+
+                    <div class="menu-roda-pe">
+                        <div class="menu-mobile-social">
+                            <a target="_blank" href="https://www.tiktok.com/@boxbuzzoficial"><i class="fab fa-tiktok"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/boxbuzz/"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61561175630300"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://x.com/boxbuzzoficial"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.reddit.com/r/BoxBuzz/"><i class="fab fa-reddit-alien"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@box_buzz"><i class="fab fa-youtube"></i></a>
+                        </div>
+
+                        <div class="menu-mobile-links">
+                            <a href="index.html#newsletter">Newsletter</a>
+                            <a href="contato.html">Contatos</a>
+                            <a href="sobre.html">Sobre</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faq -->
+        <main class="faq-area">
+            <h1>Suporte/Perguntas frequentes</h1>
+            
+            <p class="faq-descricao">Olá, obrigado por acessar o <span>BoxBuzz</span>. Estamos aqui para fornecer informações detalhadas sobre como você pode solicitar a remoção de postagens que infrinjam direitos autorais e pessoais. Além disso, explicaremos o processo para anunciar em nosso site, aproveitando nossas diversas opções de publicidade para promover seu conteúdo. Se você tiver alguma dúvida ou precisar de assistência, nossa equipe de suporte está à disposição para ajudar.</p>
+
+            <details>
+                <summary>Eliminar Postagens que Violam Direitos de Uso</summary>
+                <p>A remoção de páginas do site BoxBuzz devido a violações de direitos de uso é essencial para garantir a conformidade legal e preservar a integridade da plataforma. Ao identificar conteúdos que infringem direitos autorais ou outros direitos de propriedade intelectual, agimos imediatamente para eliminar essas páginas. Essa ação não apenas protege nossa reputação perante os usuários e parceiros, mas também reforça nosso compromisso com a ética digital e a criação de um ambiente online seguro e confiável. 
+                <br><br>
+                Ao adotar uma postura firme contra violações de direitos de uso, não apenas cumprimos com nossas responsabilidades legais, mas também promovemos uma cultura de respeito pelos direitos de propriedade intelectual, contribuindo para um ecossistema digital mais justo e transparente para todos os envolvidos. <a href="contato.html#Direitos-de-Uso">Click Aqui</a></p>
+            </details>
+
+            <details>
+                <summary>Remoção de Conteúdos de Direitos Autorais</summary>
+                <p>No BoxBuzz, tratamos com seriedade a remoção de conteúdos que violam direitos autorais, garantindo assim a conformidade legal e a integridade da nossa plataforma. Quando identificamos materiais que infringem direitos de propriedade intelectual, agimos de forma rápida e eficiente para retirá-los do ar. Esta abordagem não apenas protege nossa reputação diante dos usuários e parceiros, mas também reafirma nosso compromisso com a ética digital e a criação de um ambiente online seguro e confiável.
+                <br><br>
+                Ao adotarmos uma postura rigorosa contra violações de direitos autorais, não apenas cumprimos com nossas obrigações legais, mas também promovemos uma cultura de respeito à propriedade intelectual. Dessa forma, contribuímos para a construção de um ecossistema digital mais justo e transparente, beneficiando a todos os envolvidos. <a href="contato.html#Direitos-Autorais">Click Aqui</a></p>
+            </details>
+
+            <details>
+                <summary>Anuncie na BoxBuzz</summary>
+                <p>Boxbuzz se destaca como uma publicação digital única, reconhecida por suas páginas que refletem a paixão de seus criadores e exploram uma ampla variedade de temas, garantindo independência editorial. Atraindo uma audiência diversificada interessada em tecnologia, cultura retrô, música e subculturas, a Boxbuzz oferece oportunidades de publicidade no site, newsletters e redes sociais, proporcionando às marcas acesso a um público engajado. <a href="anuncio.html#Anuncio">Click Aqui</a></p>
+            </details>
+        </main>
+
+        <!-- Sub Roda Pé  -->
+        <div class="sub-roda-pe">
+            <div class="sub-roda-pe-area">
+                <div class="sub-roda-pe-area-h3">
+                    <h3>Conteúdo sigiloso e oculto, na web e na vida real.</h3>
+                </div>
+
+                <div class="sub-roda-pe-area-p">
+                    <p>O <span>BoxBuzz</span> Explorando o impacto da tecnologia, oferecendo insights sobre cultura pop, nostalgia, ciência, música, jogos e diversidade, celebrando a inovação e conexões que moldam o futuro, sem esquecer do passado.</p>
+                </div>
+
+                <ul class="sub-roda-pe-list-01">
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="RSS.html">RSS</a></li>
+                    <li><a href="faq.html">Perguntas frequentes</a></li>
+                    <li><a href="anuncio.html">Anunciar</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="obrigado.html">Obrigado</a></li>
+                    <li><a href="privacidade.html">Privacidade</a></li>
+                </ul>
+
+                <ul class="sub-roda-pe-list-02">
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61561175630300">Facebook</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/@box_buzz">Youtube</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/boxbuzz/">Instagram</a></li>
+                    <li><a target="_blank" href="https://www.tiktok.com/@boxbuzzoficial">TikTok</a></li>
+                    <li><a target="_blank" href="#">Telegram</a></li>
+                    <li><a target="_blank" href="https://www.reddit.com/r/BoxBuzz/">Reddit</a></li>
+                    <li><a target="_blank" href="https://x.com/i/flow/login?redirect_after_login=%2Fboxbuzzoficial">Twitter</a></li>
+                    <li><a target="_blank" href="https://br.pinterest.com/contatoboxbuzz/">Pinterest</a></li>
+                    <li><a target="_blank" href="rss.xml">RSS</a></li>
+                </ul>
+
+                <div class="sub-roda-pe-area-input">
+                    <p>Cadastre-se na <u>newsletter</u> para obter as atualizações mais recentes.</p>
+                            
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Digite seu email" required>
+                        <input type="submit" value="➜">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Roda Pé -->
+        <footer class="roda-pe">
+            <div class="roda-pe-area">
+                <figure class="roda-pe-logo">
+                    <a href="https://boxbuzz.com.br"><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI5YjY4aXd0Mmtpa3ZpeHVmOTh6cG0zNG5xdmd5M202dndvbzZteCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Trs5pThjd2WqSRlJsL/source.gif" loading="lazy"></a>
+                </figure>
+
+                <span class="roda-pe-social">
+                    <a href="https://www.instagram.com/boxbuzz/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/boxbuzzoficial" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61561175630300" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.reddit.com/r/BoxBuzz/" target="_blank"><i class="fab fa-reddit-alien"></i></a>
+                </span>
+
+                <ul class="roda-pe-links">
+                    <li><a href="https://boxbuzz.com.br/">Inicio</a></li>
+                    <li><a href="tags/series/entrevista.html">Entrevista</a></li>
+                    <li><a href="tags/explorar/musica.html">Musica</a></li>
+                    <li><a href="tags/explorar/politica.html">Política</a></li>
+                    <li><a href="tags/explorar/comportamento.html">Comportamento</a></li>
+                    <li><a href="tags/explorar/games.html">Games</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+
+                <div class="roda-pe-copy">
+                    <p> © 2024 BoxBuzz | Política de privacidade - Desenvolvido por: <a href="#">BoxBuzz</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Biblioteca de Ícones -->
+        <script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"></script>
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- Pre Loading -->
+        <script>
+            //Pre Loading
+            $(window).on('load', function () {
+                $('#preloader .inner').fadeOut();
+                $('#preloader').delay(10).fadeOut('slow'); 
+                $('body').delay(10).css({'overflow': 'visible'});
+            })
+        </script>
+
+        <!--Menu-->
+        <script >
+            // Menu
+            function toggleMenu() {
+                const menuSanduiche = document.querySelector('.menu-sanduiche');
+                const menuMobile = document.querySelector('.menu-mobile');
+                menuSanduiche.classList.toggle('sanduiche');
+                menuMobile.classList.toggle('active');
+            }
+
+            document.querySelector('.menu-sanduiche').addEventListener('click', toggleMenu);
+        </script>
+    </body>
+    </html>
