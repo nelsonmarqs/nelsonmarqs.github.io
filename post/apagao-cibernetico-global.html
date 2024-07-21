@@ -304,69 +304,6 @@
             text-decoration:underline;
             margin-right:8px;
         }
-
-        /*----- Comentario -----*/
-        #disqus_thread {
-            overflow: hidden;
-            iframe{
-                margin-top: -318px !important;
-                margin-bottom: -147px !important;
-            }
-        }
-
-        #disqus_thread {
-            width:100%;
-            margin: 0 auto;
-        }
-
-        @media(min-width:260px) {
-            #disqus_thread {
-                iframe{
-                    margin-bottom: -130px !important;
-                }
-            }
-        }
-
-        @media(min-width:321px) {
-            #disqus_thread {
-                iframe{
-                    margin-top: -214px !important;
-                }
-            }
-        }
-
-        @media(min-width:337px) {
-            #disqus_thread {
-                iframe{
-                    margin-bottom: -119px !important;
-                }
-            }
-        }
-
-        @media(min-width:360px) {
-            #disqus_thread {
-                iframe{
-                    margin-bottom: -87px !important;
-                }
-            }
-        }
-
-        @media(min-width:512px) {
-            #disqus_thread {
-                iframe{
-                    margin-bottom: -77px !important;
-                }
-            }
-        }
-
-        @media(min-width:992px) {
-            #disqus_thread {
-                iframe{
-                    margin-top: -141px !important;
-                    margin-bottom: -47px !important;
-                }
-            }
-        }
     </style>
 </head>
 <body>
@@ -461,22 +398,16 @@
         </div>
 
         <!-- Comentario -->
-        <div id="disqus_thread"></div>
+        <div id="commento"></div>
 
-        <script>
-            var disqus_config = function() {
-                this.page.url = "https://www.boxbuzz.com.br/post/apagao-cibernetico-global.html";
-                this.page.identifier = "Post-01";
-            };
-
-            (function() {
-                var d = document,
-                    s = d.createElement('script');
-                s.src = 'https://https-boxbuzz-com-br.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
+        <script defer
+          src="http://commento.example.com/js/commento.js"
+          data-css-override="http://example.com/my-custom-styling.css"
+          data-auto-init="true">
         </script>
+        
+        <script defer src="https://cdn.commento.io/js/commento.js"></script>
+
     </main>
 
     <!-- Sub Roda Pé  -->
