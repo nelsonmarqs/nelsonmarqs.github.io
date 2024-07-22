@@ -2,7 +2,6 @@
 .Post-simples-Titulo {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .Post-simples-Titulo-Area {
@@ -71,6 +70,10 @@
 }
 
 @media(min-width:992px){
+    .Post-simples-Titulo{
+        background-attachment: fixed;
+    }
+
     .Post-simples-Titulo-Area div {
         max-width: 960px;
     }
