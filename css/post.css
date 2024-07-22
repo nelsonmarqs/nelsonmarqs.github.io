@@ -305,7 +305,7 @@
 }
 
 #commento-logged-container div:nth-child(3){
-    border:1px solid lime;
+    display:none;
 }
 
 #commento-textarea-root{
