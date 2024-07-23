@@ -321,11 +321,11 @@
 .commento-card{
     border:1px solid red!important;
     border-radius:6px;
-    margin-right:6px;
 }
 
 .commento-card *{
     border:1px solid lime;
+    margin-right:6px!important;
 }
         
 #commento-submit-button-root{
