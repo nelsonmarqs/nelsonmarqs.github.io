@@ -251,6 +251,7 @@
 
 .post-simples-figure img{
     width:100%;
+    border-radius:6px;
 }
 
 .post-simples-figure figcaption{
