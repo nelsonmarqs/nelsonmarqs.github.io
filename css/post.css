@@ -322,6 +322,11 @@
     border:1px solid red!important;
     border-radius:6px;
 }
+
+.commento-card *{
+    margin-right:6px;
+    border:1px solid pink;
+}
         
 #commento-submit-button-root{
     border-radius:6px;
