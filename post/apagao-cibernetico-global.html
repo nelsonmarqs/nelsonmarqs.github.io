@@ -14,6 +14,13 @@
     <link rel="shortcut icon" href="https://6696cfaac891101cdca269a5--deltbox.netlify.app/img/menu/favicon.ico"/>
 </head>
 <body>
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <img src="https://ia600602.us.archive.org/11/items/logo_20240723_202407/logo.gif" width="95px" loading="lazy">
+        </div>
+    </div>
+    
     <!-- Menu -->
     <div id="menu"></div>
 
@@ -128,6 +135,16 @@
 
     <!-- MP3 -->
     <script src="../js/mp3-player.js"></script>
+
+    <!-- Pre Loading -->
+    <script>
+    //Pre Loading
+    $(window).on('load', function () {
+        $('#preloader .inner').fadeOut();
+        $('#preloader').delay(10).fadeOut('slow'); 
+        $('body').delay(10).css({'overflow': 'visible'});
+    })
+    </script>
 
     <!-- Chamar Menu -->
     <script>
