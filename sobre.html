@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Sobre | BoxBuzz</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="shortcut icon" href="https://6696cfaac891101cdca269a5--deltbox.netlify.app/img/menu/favicon.ico"/>
+</head>
+<body>
+  <!-- início do preloader -->
+  <div id="preloader">
+      <div class="inner">
+          <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI5YjY4aXd0Mmtpa3ZpeHVmOTh6cG0zNG5xdmd5M202dndvbzZteCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Trs5pThjd2WqSRlJsL/source.gif" width="95px" loading="lazy">
+      </div>
+  </div>
+  
+  <!-- Menu -->
+  <div id="menu"></div>
+
+  <!-- Sobre -->
+  <main class="sobre">
+    <h1>Sobre</h1>
+
+    <h2>Sobre a BoxBuzz.</h2>
+
+    <p>Somos uma mídia independente, profundamente influenciada pela cultura dos anos 90 e início dos anos 2000. Com uma abordagem diversificada e um olhar curioso sobre o mundo, buscamos oferecer conteúdo autêntico e envolvente para uma audiência interessada em uma variedade de tópicos.</p>
+
+    <p>Exploramos uma ampla gama de temas, desde música até sociedade, cultura, arte, jogos, filmes e muito mais. Nossa plataforma reflete essa diversidade de perspectivas e experiências, com escritórios em diversos países para capturar essa riqueza cultural.</p>
+
+    <p>Nossas editorias cobrem uma variedade de interesses, desde jornalismo imersivo até explorações no campo musical, cultura eletrônica, ciência e tecnologia, arte e criatividade, gastronomia, esportes, saúde e bem-estar, questões femininas, moda e personalidades, e uma seção dedicada aos entusiastas de jogos.</p>
+
+    <p>Nosso compromisso vai além de apenas entreter; buscamos ser uma plataforma dedicada a oferecer uma ampla gama de perspectivas sobre os temas significativos para nossa audiência diversificada. Com uma equipe apaixonada e dedicada, estamos constantemente expandindo nossas operações e explorando novas maneiras de nos conectar e inspirar nossos leitores em todo o mundo.</p>
+
+    <h3>CONTATOS</h3>
+
+    <p>Para comunicação, marketing, eventos e parcerias <a href="">andre.maleronka@vice.com</a></p>
+
+    <p>Para propostas de conteúdo <a href="">pautas@vice.com</a></p>
+
+    <p>Para propostas comerciais mirella.payola@vice.com e <a href="">roberta.padilla@vice.com</a></p>
+
+    <h3>FUNDADORES</h3>
+
+    <p>Suroosh Alvi & Shane Smith</p>
+  </main>
+
+  <div class="sobre-hr"></div>
+
+  <!-- Sub Roda Pé  -->
+  <div id="sub-roda-pe"></div>
+
+  <!-- Roda Pé -->
+  <div id="roda-pe"></div>
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"></script>
+  
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <!-- Pre Loading -->
+  <script>
+    //Pre Loading
+    $(window).on('load', function () {
+      $('#preloader .inner').fadeOut();
+      $('#preloader').delay(10).fadeOut('slow'); 
+      $('body').delay(10).css({'overflow': 'visible'});
+    })
+  </script>
+  
+  <!-- Chamar Menu -->
+  <script>
+    $(document).ready(function () {
+      $("#menu").load("html/principal/menu.html");
+    });
+  </script>
+
+  <!-- Chamar Sub Roda Pé -->
+  <script>
+    $(document).ready(function () {
+      $("#sub-roda-pe").load("html/principal/sub-roda-pe.html");
+    });
+  </script>
+
+  <!-- Chamar Roda Pé -->
+    <script>
+      $(document).ready(function () {
+        $("#roda-pe").load("html/principal/roda-pe.html");
+      });
+    </script>
+</body>
+</html>
