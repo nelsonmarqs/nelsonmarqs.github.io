@@ -321,6 +321,7 @@
 .commento-card{
     border:1px solid red!important;
     border-radius:6px;
+    padding-right:6px;
 }
         
 #commento-submit-button-root{
