@@ -139,7 +139,8 @@ body {
 
 .landing-page-texto{
   padding:0px 16px;
-  background:blue;
+  background-image: url("https://archive.org/download/fundo-newslatter/fundo-newslatter.png");
+  color:black;
 }
 
 .landing-page-texto-area{
@@ -159,6 +160,7 @@ body {
 
 .landing-page-texto-area h1 span{
   background:black;
+  color:#d4c5fe;
 }
 
 .landing-page-texto-area p{
@@ -177,6 +179,7 @@ body {
 
 .landing-page-tags span a{
   background:black;
+  color:#d4c5fe;
 }
 
 .landing-page-tags a{
@@ -197,6 +200,7 @@ body {
   grid-column-gap:5px;
   font-family:OpenSans-Regular;
   font-size:12px;
+  text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
 }
 
 .landing-page-min p{
@@ -207,6 +211,7 @@ body {
 
 .landing-page-social{
   font-size:20px;
+  text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
 }
 
 @media(min-width:768px){
@@ -238,6 +243,7 @@ body {
     background-repeat:no-repeat;
     background-position-y:calc(100% + 11.45px);
     background-position-X:50%;
+    color:#d4c5fe;
   }
       
   .landing-page-texto-area{
