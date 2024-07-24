@@ -464,12 +464,6 @@ body {
   text-decoration-color:#f568bb;
 }
 
-.newsletter-area div p a {
-  font-family: VCR;
-  color: #f568bb;
-  text-shadow:1px 1px 0px black, 2px 2px 3px black;
-}
-
 .newsletter-area form {
   width: 100%;
   display: flex;
