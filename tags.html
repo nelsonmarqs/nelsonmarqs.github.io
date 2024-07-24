@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Home | BoxBuzz</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="https://6696cfaac891101cdca269a5--deltbox.netlify.app/img/menu/favicon.ico"/>
+<style>
+</style>
+</head>
+<body>
+    <!-- Menu -->
+    <div id="menu"></div>
+
+    <!-- Post's -->
+    <div id="post" style="padding-top:100px;"></div>
+
+    <!-- Sub Roda Pé  -->
+    <div id="sub-roda-pe"></div>
+
+    <!-- Roda Pé -->
+    <div id="roda-pe"></div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Biblioteca de Ícones -->
+    <script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"></script>
+    
+    <!-- Chamar Menu -->
+    <script>
+        $(document).ready(function () {
+            $("#menu").load("html/principal/menu.html");
+        });
+    </script>
+
+    <!-- Chamar Sub Roda Pé -->
+    <script>
+        $(document).ready(function () {
+            $("#sub-roda-pe").load("html/principal/sub-roda-pe.html");
+        });
+    </script>
+        
+    <!-- Chamar Roda Pé -->
+    <script>
+        $(document).ready(function () {
+            $("#roda-pe").load("html/principal/roda-pe.html");
+        });
+    </script>
+
+    <!-- Chamar Post -->
+    <script>
+        $(document).ready(function () {
+            $("#post").load("html/post/post.html");
+        });
+    </script>
+</body>
+</html>

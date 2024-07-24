@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="html-404">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Error 404 | BoxBuzz</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="https://6696cfaac891101cdca269a5--deltbox.netlify.app/img/menu/favicon.ico"/>
+<style>
+    
+</style>
+</head>
+<body class="body-404">
+
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI5YjY4aXd0Mmtpa3ZpeHVmOTh6cG0zNG5xdmd5M202dndvbzZteCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Trs5pThjd2WqSRlJsL/source.gif" width="95px" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="menu"></div>
+
+    <!-- Erro -->
+    <main class="error-404-area">
+        <div>
+            <h1 class="glitch-404" title="Error - 404">Error - 404</h1>
+            <p>Ocorreu um erro, para continuar:</p>
+            <p><a href="https://boxbuzz.com.br/">* Retorne à nossa página inicial.</a></p>
+            <p>* Mande um e-mail sobre este erro e tente depois.</p>
+            <span><a href="">Retornar</a> | <a href="">Enviar E-mail</a></span>
+        </div>
+    </main>
+
+    <!-- Sub Roda Pé  -->
+    <div id="sub-roda-pe"></div>
+
+    <!-- Roda Pé -->
+    <div id="roda-pe"></div>
+
+    <!-- Biblioteca de Ícones -->
+    <script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Pre Loading -->
+    <script>
+        //Pre Loading
+        $(window).on('load', function () {
+            $('#preloader .inner').fadeOut();
+            $('#preloader').delay(10).fadeOut('slow'); 
+            $('body').delay(10).css({'overflow': 'visible'});
+        })
+    </script>
+    
+    <!--Menu-->
+    <script >
+        // Menu
+        function toggleMenu() {
+            const menuSanduiche = document.querySelector('.menu-sanduiche');
+            const menuMobile = document.querySelector('.menu-mobile');
+            menuSanduiche.classList.toggle('sanduiche');
+            menuMobile.classList.toggle('active');
+        }
+
+        document.querySelector('.menu-sanduiche').addEventListener('click', toggleMenu);
+    </script>
+
+    <!-- Chamar Menu -->
+    <script>
+        $(document).ready(function () {
+            $("#menu").load("html/principal/menu.html");
+        });
+    </script>
+
+    <!-- Chamar Sub Roda Pé -->
+    <script>
+        $(document).ready(function () {
+            $("#sub-roda-pe").load("html/principal/sub-roda-pe.html");
+        });
+    </script>
+
+    <!-- Chamar Roda Pé -->
+    <script>
+        $(document).ready(function () {
+            $("#roda-pe").load("html/principal/roda-pe.html");
+        });
+    </script>
+</body>
+</html>
