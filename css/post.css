@@ -124,6 +124,12 @@
     margin-top:14px;
 }
 
+.post-simples-legenda a{
+    font-weight:bold;
+    text-decoration:underline;
+    text-decoration-color: #f568bb;
+}
+
 /*----- Post Descricao -----*/
 .post-simples-descricao{
     font-family:OpenSans-Regular;
@@ -246,9 +252,6 @@
 }
 
 /*----- Imagem -----*/
-    .post-simples-figure{
-}
-
 .post-simples-figure img{
     width:100%;
     border-radius:6px;
@@ -257,6 +260,13 @@
 .post-simples-figure figcaption{
     font-family:VCR;
     font-size:11px;
+    line-height:20px;
+}
+
+.post-simples-figure figcaption a{
+    font-weight:bold;
+    text-decoration:underline;
+    text-decoration-color: #f568bb;
 }
 
 /*----- Video -----*/
