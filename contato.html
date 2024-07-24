@@ -1,142 +1,166 @@
-<!doctype html>
-<html lang=pt-br>
-<meta content="width=device-width,initial-scale=1" name=viewport>
-<meta charset=utf-8>
-<meta content="IE=edge" http-equiv=X-UA-Compatible>
-<title>Contatos | BoxBuzz</title>
-<link href=css/style.css rel=stylesheet>
-<link rel="shortcut icon" href="https://6696cfaac891101cdca269a5--deltbox.netlify.app/img/menu/favicon.ico"/>
-<body>
-    <!-- início do preloader -->
-    <div id="preloader">
-        <div class="inner">
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI5YjY4aXd0Mmtpa3ZpeHVmOTh6cG0zNG5xdmd5M202dndvbzZteCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Trs5pThjd2WqSRlJsL/source.gif" width="95px" loading="lazy">
-        </div>
-    </div>
-    
-    <!-- Menu -->
-    <div id="menu"></div>
-    
-    <!-- Contato -->
-    <main class="contato-container" id="Direitos-de-Uso Direitos-Autorais">
-        <div class="contato">
-            <h1>Contato!</h1>
-            
-            <h2>Tem alguma dúvida?</h2>
-            
-            <p>Entre em contato conosco para dúvidas, informações, sugestões e parcerias. <a href="mailto:contatoboxbuzz@gmail.com">contatoboxbuzz@gmail.com</a>
-        </div>
+/*----- Contato -----*/
+.contato-container{
+    margin-bottom:104px;
+    padding-top:80px;
+}
 
-        <form class="contato-formulario" method="post" name="contato" netlify>
-            <input id="nome" name="nome" placeholder="None" required><br>
-            <input id="email" name="email" placeholder="E-mail" required type="email"><br>
-            <input id="assunto" name="assunto" placeholder="Assunto" required><br>
+.contato{
+    max-width:420px;
+    padding:0 15px;
+    margin:0 auto;
+    transition:0.3s
+}
 
-            <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea><br>
-            
-            <input type="submit" value="Enviar">
-        </form>
-    </main>
+.contato h1{
+    font-family:BarlowCondensed-Bold;
+    font-size:56px;
+    margin-top:84px;
+    word-break:break-word;
+}
 
-    <!-- Sub Roda Pé  -->
-    <div id="sub-roda-pe"></div>
+.contato h2{
+    display:flex;
+    flex-direction:column;
+    font-family:BarlowCondensed-Bold;
+    font-size:40px;
+    margin-top:222px
+}
 
-    <!-- Roda Pé -->
-    <div id="roda-pe"></div>
+.contato h2::after{
+    content:'';
+    width:66px;
+    height:4px;
+    background:#f568bb;
+    margin-top:27px
+}
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"></script>
-    
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    
-    <!-- Pre Loading -->
-    <script>
-        //Pre Loading
-        $(window).on('load', function () {
-            $('#preloader .inner').fadeOut();
-            $('#preloader').delay(10).fadeOut('slow'); 
-            $('body').delay(10).css({'overflow': 'visible'});
-        })
-    </script>
+.contato p{
+    font-family:OpenSans-Regular;
+    font-size:18px;
+    line-height:38px;
+    margin-top:22px
+}
 
-    <!-- Top Scroll Direito de Uso -->
-     <script>
-        // Espera até que o documento esteja completamente carregado
-        document.addEventListener('DOMContentLoaded', function() {
-            // Verifica se há um hash na URL e se é o que desejamos
-            if (window.location.hash === '#Direitos-de-Uso') {
-                // Define a posição desejada para o scroll (364px do topo)
-                var scrollPosition = 364;
-                
-                // Define a animação de scroll suave para a posição desejada
-                window.scrollTo({
-                    top: scrollPosition,
-                    behavior: 'smooth'  // Scroll suave
-                });
-            }
-        });
-    </script>
+.contato p a{
+    text-decoration:underline;
+    text-decoration-color:#f568bb;
+    word-break:break-word;
+}
 
-    <!-- Input Texto Direito de Uso -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Verifica se o hash da URL é #contato-duvida
-            if (window.location.hash === '#Direitos-de-Uso') {
-                // Preenche o campo assunto com o texto desejado
-                document.getElementById('assunto').value = "Eliminar Postagens que Violam Direitos de Uso";
-            }
-        });
-    </script>
+.contato-formulario{
+    max-width:420px;
+    display:flex;
+    flex-direction:column;
+    grid-row-gap:10px;
+    padding:0 15px;
+    margin:0 auto;
+    margin-top:14px;
+}
 
-    <!-- Top Scroll Direito Autorais -->
-     <script>
-        // Espera até que o documento esteja completamente carregado
-        document.addEventListener('DOMContentLoaded', function() {
-            // Verifica se há um hash na URL e se é o que desejamos
-            if (window.location.hash === '#Direitos-Autorais') {
-                // Define a posição desejada para o scroll (364px do topo)
-                var scrollPosition = 364;
-                
-                // Define a animação de scroll suave para a posição desejada
-                window.scrollTo({
-                    top: scrollPosition,
-                    behavior: 'smooth'  // Scroll suave
-                });
-            }
-        });
-    </script>
+.contato-formulario input{
+    width:100%;
+    height:50px;
+    border-radius:6px;
+    background:#fff0;
+    border:2px solid #d4c5fe;
+    color:#fff;
+    padding:0 15px;
+    font-family:VCR;
+    font-size:13px;
+}
 
-    <!-- Input Texto Direito Autorais -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Verifica se o hash da URL é #contato-duvida
-            if (window.location.hash === '#Direitos-Autorais') {
-                // Preenche o campo assunto com o texto desejado
-                document.getElementById('assunto').value = "Remoção de Conteúdos de Direitos Autorais";
-            }
-        });
-    </script>
+.contato-formulario textarea{
+    border-radius:6px;
+    height:230px;
+    background:#fff0;
+    border:2px solid #d4c5fe;
+    color:#fff;
+    padding:15px;
+    font-family:VCR;
+    font-size:12px
+}
 
-    <!-- Chamar Menu -->
-    <script>
-        $(document).ready(function () {
-            $("#menu").load("html/principal/menu.html");
-        });
-    </script>
+.contato-formulario input:last-child{
+    width:140px;
+    height:50px;
+    background:#d4c5fe;
+    text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
+    animation:ButtomAnimation 8s infinite;
+    color:black;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
 
-    <!-- Chamar Sub Roda Pé -->
-    <script>
-        $(document).ready(function () {
-            $("#sub-roda-pe").load("html/principal/sub-roda-pe.html");
-        });
-    </script>
-    
-    <!-- Chamar Roda Pé -->
-    <script>
-        $(document).ready(function () {
-            $("#roda-pe").load("html/principal/roda-pe.html");
-        });
-    </script>
-</body>
-</html>
+.contato-formulario input:focus,
+.contato-formulario textarea:focus{
+    outline:none
+}
+
+@media(min-width:680px){
+    .contato,
+    .contato-formulario{
+        max-width:600px;
+        padding:0
+    }
+}
+
+@media(min-width:768px){
+    .contato h1{
+        font-size:89px;
+    }
+}
+
+@media(min-width:992px){
+    .contato-container{
+        display:flex;
+        justify-content:center;
+    }
+
+    .contato,
+    .contato-formulario{
+        max-width:400px;
+        min-width:400px
+    }
+
+    .contato{
+        margin:0
+    }
+
+    .contato-formulario{
+        margin:0;
+        margin-top:383px
+    }
+
+    .contato-formulario *{
+        max-width:345px
+    }
+}
+
+@media(min-width:1025px){
+    .contato,
+    .contato-formulario{
+        max-width:490px;
+        min-width:490px
+    }
+
+    .contato-formulario *{
+        max-width:427px
+    }
+}
+
+@media(min-width:1200px){
+    .contato,
+    .contato-formulario{
+        max-width:565px;
+        min-width:565px;
+    }
+
+    .contato *{
+        max-width:530px;
+    }
+
+    .contato-formulario *{
+        max-width:495px
+    }
+}
