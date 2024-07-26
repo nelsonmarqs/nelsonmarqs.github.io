@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang=pt-br>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <title>Pesquisa | BoxBuzz</title>
+    <link href=css/style.css rel=stylesheet>
+    <link rel="shortcut icon" href="https://6696cfaac891101cdca269a5--deltbox.netlify.app/img/menu/favicon.ico"/>
+    <body>
+        <!-- início do preloader -->
+        <div id="preloader">
+            <div class="inner">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGI5YjY4aXd0Mmtpa3ZpeHVmOTh6cG0zNG5xdmd5M202dndvbzZteCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Trs5pThjd2WqSRlJsL/source.gif" width="95px" loading="lazy">
+            </div>
+        </div>
+        
+        <!-- Menu -->
+        <div id="menu"></div>
+
+        <!-- Search -->
+        <section class=search-area>
+            <h1 class=search-area-title>Buscar</h1>
+
+            <div class=search-barra>
+                <i class="fa-search fas" aria-hidden=true></i> 
+
+                <input id=search-input placeholder="Encontre posts, tags e autores">
+                
+                <input id=search-enviar type=submit value=Buscar>
+            </div>
+
+            <div class=search-resultado>
+                <div class=search-cards>
+                    <img src=https://www.404media.co/content/images/size/w600/2024/02/nl22.png alt="">
+
+                    <a href="">Gayz</a>
+                    
+                    <h1><a href="">Greece, the inventor of gay sex, legalises gay marriage</a></h1>
+
+                    <address>
+                        <img src=https://www.404media.co/content/images/size/w100/2023/08/404-sam-10--1-.jpg alt="">
+
+                        <a href="">Nelson Marques</a>
+                    </address>
+                </div>
+
+                <div class=search-cards>
+                    <img src=https://www.404media.co/content/images/size/w600/2024/02/nl22.png alt="">
+
+                    <a href="">Porco</a>
+
+                    <h1><a href="">Cavalo</a></h1>
+
+                    <address>
+                        <img src=https://www.404media.co/content/images/size/w100/2023/08/404-sam-10--1-.jpg alt="">
+
+                        <a href="">Nelson Marques</a>
+                    </address>
+                </div>
+               
+                <div class=search-cards>
+                    <img src=https://www.404media.co/content/images/size/w600/2024/02/nl22.png alt="">
+
+                    <a href="">Gayz</a>
+
+                    <h1><a href="">Greece, the inventor of gay sex, legalises gay marriage</a></h1>
+
+                    <address>
+                        <img src=https://www.404media.co/content/images/size/w100/2023/08/404-sam-10--1-.jpg alt="">
+
+                        <a href="">Nelson Marques</a>
+                    </address>
+                </div>
+
+                <div class=search-cards>
+                    <img src=https://www.404media.co/content/images/size/w600/2024/02/nl22.png alt="">
+
+                    <a href="">Gayz</a>
+
+                    <h1><a href="">Greece, the inventor of gay sex, legalises gay marriage</a></h1>
+
+                    <address>
+                        <img src=https://www.404media.co/content/images/size/w100/2023/08/404-sam-10--1-.jpg alt="">
+
+                        <a href="">Nelson Marques</a>
+                    </address>
+                </div>
+
+                <div class=search-cards>
+                    <img src=https://www.404media.co/content/images/size/w600/2024/02/nl22.png alt="">
+
+                    <a href="">Porco</a>
+
+                    <h1><a href="">Cavalo</a></h1>
+
+                    <address>
+                        <img src=https://www.404media.co/content/images/size/w100/2023/08/404-sam-10--1-.jpg alt="">
+
+                        <a href="">Nelson Marques</a>
+                    </address>
+                </div>
+
+                <div class=search-cards>
+                    <img src=https://www.404media.co/content/images/size/w600/2024/02/nl22.png alt="">
+
+                    <a href="">Gayz</a>
+                    
+                    <h1><a href="">Greece, the inventor of gay sex, legalises gay marriage</a></h1>
+
+                    <address>
+                        <img src=https://www.404media.co/content/images/size/w100/2023/08/404-sam-10--1-.jpg alt="">
+
+                        <a href="">Nelson Marques</a>
+                    </address>
+                </div>
+
+                <div class=search-cards id=search-cards-error style="margin:0 auto">
+                    <h1><a href="">Busca não encontrada! 🙁</a></h1>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sub Roda Pé  -->
+        <div id="sub-roda-pe"></div>
+
+        <!-- Roda Pé -->
+        <div id="roda-pe"></div>
+
+        <!-- Fontawesome -->
+        <script src=https://kit.fontawesome.com/1111dee495.js crossorigin=anonymous></script>
+        
+        <!-- Jquery -->
+        <script src=https://code.jquery.com/jquery-3.7.1.min.js></script>
+        
+        <!-- Script JS -->
+        <script src="js/script.js"></script>
+        
+        <!-- Carregar HTML externo -->
+        <script>
+            // Carregar conteúdo externo
+            $(document).ready(function () {
+                $("#menu").load("html/principal/menu.html");
+                $("#sub-roda-pe").load("html/principal/sub-roda-pe.html");
+                $("#roda-pe").load("html/principal/roda-pe.html");
+                $("#post").load("html/post/post.html");
+            });
+        </script>
+    </body>
+    </html>
