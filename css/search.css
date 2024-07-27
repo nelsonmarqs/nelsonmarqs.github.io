@@ -42,6 +42,7 @@
     font-size:15.5px;
     color: black;
     text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
+    border:none;
     border-radius: 6px;
 }
 
