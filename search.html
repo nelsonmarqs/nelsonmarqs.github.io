@@ -162,26 +162,5 @@
 
     <!-- Script de Pesquisa -->
     <script src="js/search.js"></script>
-    
-    <!-- Cavalooo -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Verifica se a URL contém o fragmento "#pesquisar"
-            if (window.location.hash === '#pesquisar') {
-                // Seleciona o campo de entrada de pesquisa
-                var searchInput = document.getElementById('search-input');
-                
-                // Foca no campo de entrada de pesquisa
-                if (searchInput) {
-                    // Adiciona um pequeno atraso antes de focar
-                    setTimeout(function() {
-                        searchInput.focus();
-                        // Adiciona um pequeno atraso para garantir que o teclado apareça
-                        searchInput.click();
-                    }, 100);
-                }
-            }
-        });
-    </script>
 </body>
 </html>
