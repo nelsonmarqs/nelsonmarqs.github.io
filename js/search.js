@@ -1,3 +1,21 @@
+//Auto Click Na Barra de Busca
+document.addEventListener('DOMContentLoaded', function() {
+    // Verifica se a URL contém o fragmento "#pesquisar"
+    if (window.location.hash === '#pesquisar') {
+        // Seleciona o campo de entrada de pesquisa
+        var searchInput = document.getElementById('search-input');
+        
+        // Simula um clique no campo de entrada de pesquisa
+        if (searchInput) {
+            // Adiciona um pequeno atraso antes de clicar
+            setTimeout(function() {
+                searchInput.focus(); // Foca o campo de entrada
+                searchInput.click(); // Simula um clique para garantir a ativação do teclado
+            }, 100); // 100ms de atraso para garantir que o DOM esteja pronto
+        }
+    }
+});
+ 
 // Search
 function search() {
      var searchTerm = getSearchTerm().toLowerCase();
