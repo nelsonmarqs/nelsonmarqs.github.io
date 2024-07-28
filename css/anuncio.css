@@ -1,0 +1,130 @@
+.anuncio-area{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    padding:0px 15px;
+    margin:0 auto;
+    padding-top:110px;
+}
+
+.anuncio-area h1{
+    font-family:BarlowCondensed-Bold;
+    font-size:56.97px;
+    text-align:center;
+    margin-bottom:38px;
+}
+
+.anuncio-area p{
+    max-width:672px;
+    font-family:OpenSans-Regular;
+    font-size:18px;
+    line-height:31px;
+    margin:0 auto;
+    margin-bottom:35px;
+}
+
+.anuncio-area p:nth-child(6){
+    margin-bottom:40px;
+}
+
+.anuncio-descricao span{
+    text-decoration:underline;
+    text-decoration-color:#f568bb;
+}
+
+.anuncio-descricao a{
+    text-decoration:underline;
+    text-decoration-color:#f568bb;
+}
+
+details{
+    max-width:672px;
+    border:1px solid #d4c5fe;
+    padding:21px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    margin:0 auto;
+    margin-bottom:35px;
+}
+
+details:nth-child(6){
+    margin-bottom:0px;
+}
+
+details summary{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family:BarlowCondensed-Bold;
+    font-size:20px;
+}
+
+details p{
+    margin-top:15px;
+    cursor:default;
+    font-size:17px;
+    font-family:OpenSans-Regular;
+    line-height:29px;
+}
+
+details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
+}
+
+.anuncio-area form{
+    width:100%;
+    max-width:672px;
+    display:flex;
+    flex-direction:column;
+    grid-row-gap:24px;
+    margin:0 auto;
+    margin-top:11px;
+}
+
+.anuncio-area form input{
+    height:50px;
+    padding:0px 15px;
+    border:1px solid #d4c5fe;
+    background:transparent;
+    border-radius:6px;
+    color:#d4c5fe;
+    font-family:VCR;
+}
+
+.anuncio-area form input:focus {
+    outline: none;
+}
+
+.anuncio-area form button{
+    width: 140px;
+    height: 50px;
+    background: #d4c5fe;
+    text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
+    animation: ButtomAnimation 8s infinite;
+    color: black;
+    font-size: 14px;
+    font-family:VCR;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border:none;
+    border-radius:6px;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        transform:translateY(-5px);
+    }
+          
+    100% {
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}
+
+@media(min-width:768px){
+    .anuncio-area h1{
+        font-size:91.42px;
+    }
+}
