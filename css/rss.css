@@ -1,0 +1,86 @@
+.rss-area {
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+    padding-top: 108px;
+}
+
+.rss-area h1 {
+    font-family: BarlowCondensed-Bold;
+    font-size: 56.97px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.rss-area h2 {
+    max-width: 672px;
+    font-family: BarlowCondensed-Bold;
+    font-size: 44px;
+    margin: 0 auto;
+    margin-bottom:35px;
+}
+
+.rss-area p {
+    max-width: 672px;
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    line-height: 31px;
+    margin: 0 auto;
+    margin-bottom:35px;
+}
+
+.rss-area p:last-child{
+    margin-bottom:0px!important;
+}
+
+.rss-area p a {
+    text-decoration: underline;
+    text-decoration-color: #f568bb;
+}
+
+.rss-area p b {
+    font-size: 17px;
+}
+
+.rss-area ul {
+    max-width: 672px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.rss-area li {
+    list-style: disc;
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.rss-area hr {
+    max-width: 672px;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 39px;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (min-width: 768px) {
+    .rss-area{
+        padding-top: 136px;
+    }
+
+    .rss-area h1 {
+        font-size:91.42px;
+        margin-bottom: 59px;
+    }
+}
