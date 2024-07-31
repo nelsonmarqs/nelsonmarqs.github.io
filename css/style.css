@@ -463,7 +463,6 @@ body {
 
 .newsletter-area figure a img {
   width:calc(204px + (350 - 204) * ((100vw - 240px) / (767 - 240)));
-  filter: drop-shadow(3px 3px 0px black);
 }
 
 .newsletter-area div p {
