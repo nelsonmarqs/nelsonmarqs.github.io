@@ -439,7 +439,7 @@ body {
 
 .newsletter {
   width:100%;
-  height:calc(383px + (340 - 383) * ((100vw - 360px) / (767 - 360)));
+  height:calc(387px + (344 - 387) * ((100vw - 360px) / (767 - 360)));
   display: flex;
   justify-content: center;
   clip-path: polygon(0 calc(4.0% + (18.4 - 4.0) * ((100vw - 360px) / (767 - 360))), 100% 0, 100% calc(96.4% + (81.3 - 96.4) * ((100vw - 360px) / (767 - 360))), 0 100%);
@@ -462,8 +462,7 @@ body {
 }
 
 .newsletter-area figure a img {
-  width: 100%;
-  max-width: 260px;
+  width:calc(204px + (350 - 204) * ((100vw - 240px) / (767 - 240)));
   filter: drop-shadow(3px 3px 0px black);
 }
 
