@@ -173,6 +173,42 @@
     margin-right: 8px;
 }
 
+/*----- Comentario -----*/
+#commento{
+    margin-top:30px;
+}
+#commento-logged-container div:nth-child(3){
+    display:none;
+}
+#commento-textarea-root{
+    background:transparent!important;
+    border:1px solid #d4c5fe;
+    border-radius:6px;
+    font-family:OpenSans-Regular;
+    font-size:12px;
+    line-height:20px;
+}
+.commento-card{
+    border:1px solid #d4c5fe!important;
+    border-radius:6px;
+}
+        
+#commento-submit-button-root{
+    border-radius:6px;
+    background-color:#d4c5fe;
+    font-family:VCR;
+    color:black;
+    text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
+    font-weight:light;
+}
+#commento-footer{
+    display:none;
+}
+        
+.commento-logo-container{
+    display:none;
+}
+
 @media(min-width:768px){
     .postagem-titulo-area div{
         max-width:720px;
