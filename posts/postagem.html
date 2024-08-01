@@ -144,13 +144,21 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <!-- Script JS -->
-    <script src="../js/script.js"></script>
-
     <!-- Comentario JS -->
     <script defer src="http://commento.example.com/js/commento.js" data-css-override="http://example.com/my-custom-styling.css" data-auto-init="true" data-page-id="https://boxbuzz.com.br/post/apagao-cibernetico-global.html#commento-login-box-container">
     </script>
     
     <script defer src="https://cdn.commento.io/js/commento.js"></script>
+
+    <script>
+    // Carregar HTML externo
+    $(document).ready(function () {
+        $("#menu").load("../html/principal/menu.html");
+        $("#sub-roda-pe").load("../html/principal/sub-roda-pe.html");
+        $("#roda-pe").load("../html/principal/roda-pe.html");
+        $("#stories").load("../html/stories/stories.html");
+        $("#post").load("../html/post/post.html");
+    });
+    </script>
 </body>
 </html>
