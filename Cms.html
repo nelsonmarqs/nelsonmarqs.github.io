@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Entrada</title>
+    <style>
+        h1{
+            font-family:arial;
+            font-size:50px;
+            font-weight:bold;
+            text-align:center;
+        }
+
+        label{
+            font-family:arial;
+            font-size:20px;
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+
+        input{
+            border:none;
+            border-radius:6px;
+        }
+
+        input:focus,
+        textarea{
+            outline:none;
+        }
+
+        .baixarHtml{
+            max-width:650px;
+            display:flex;
+            flex-direction:column;
+            margin:0 auto;
+            margin-block:20px;
+            border:1px solid rgba(0,0,0,0.1);
+            padding:10px;
+        }
+
+        .baixarHtml input{
+            border:1px solid rgba(0,0,0,0.1);
+            padding:8px;
+        }
+
+        #post-form{
+            max-width:670px;
+            display:flex;
+            flex-direction:column;
+            grid-row-gap:20px;
+            margin:0 auto;
+        }
+
+        #post-form div{
+            display:flex;
+            flex-direction:column;
+            border:1px solid rgba(0,0,0,0.1);
+            padding:10px;
+        }
+
+        #post-form div input{
+            margin-bottom:20px;
+            border:1px solid rgba(0,0,0,0.1);
+            padding:8px;
+        }
+
+        #post-form div input:last-child{
+            margin-bottom:0px;
+        }
+
+        #post-form div:nth-child(5) textarea{
+            height:200px;
+            border:1px solid black;
+            border-radius:6px;
+            padding:10px;
+            margin-bottom:20px;
+            border:1px solid rgba(0,0,0,0.1);
+        }
+
+        #post-form div:nth-child(6) textarea{
+            height:300px;
+            border:1px solid black;
+            border-radius:6px;
+            padding:10px;
+            margin-bottom:20px;
+            border:1px solid rgba(0,0,0,0.1);
+        }
+
+        #post-form button{
+            width:140px;
+            height:50px;
+        }
+
+        .botoes{
+            max-width:670px;
+            margin:0 auto;
+            padding-top:20px;
+        }
+
+        #resultado {
+            max-width:650px;
+            margin:0 auto;
+            white-space: pre-wrap; /* Mantém a formatação do HTML */
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-family: monospace; /* Define uma fonte de largura fixa para melhor visualização */
+        }
+
+        .copiar{
+            max-width:670px;
+            margin:0 auto;
+            padding-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Post Thumb</h1>
+    
+    <div class="baixarHtml">
+        <label>Download HTML</label>
+        <input type="text" id="download" name="download" placeholder="Insira o nome do arquivo html">
+    </div>
+
+    <form id="post-form">
+        <!-- Campos do formulário -->
+        <div>
+            <label>Metadados de SEO</label>
+            <input type="text" id="seoDescription" name="seoDescription" placeholder="Insira a descrição do SEO">
+            <input type="text" id="seoTags" name="seoTags" placeholder="Insira as tags do SEO">
+            <input type="text" id="seoAuthor" name="seoAuthor" placeholder="Insira o nome do autor do SEO">
+        </div>
+
+        <div>
+            <label>Metadados do Open Graph</label>
+            <input type="text" id="ogTitle" name="ogTitle" placeholder="Insira o título do Open Graph">
+            <input type="text" id="ogUrl" name="ogUrl" placeholder="Insira a URL do Open Graph">
+            <input type="text" id="ogImage" name="ogImage" placeholder="Insira a imagem do Open Graph">
+            <input type="text" id="ogDescription" name="ogDescription" placeholder="Insira a descrição do Open Graph">
+        </div>
+
+        <div>
+            <label>Título da Página</label>
+            <input type="text" id="pageTitle" name="pageTitle" placeholder="Insira o título da página">
+        </div>
+
+        <div>
+            <label>Postagem Título</label>
+            <input type="text" id="postTitleImage" name="postTitleImage" placeholder="Insira a imagem do título">
+            <input type="text" id="postTitleTagURL" name="postTitleTagURL" placeholder="Insira a url da tag do título">
+            <input type="text" id="postTitleTag" name="postTitleTag" placeholder="Insira a tag do título">
+            <input type="text" id="postTitleText" name="postTitleText" placeholder="Insira o texto do título">
+        </div>
+
+        <div>
+            <label>Postagem Descrição</label>
+            <input type="text" id="postDescriptionCaption" name="postDescriptionCaption" placeholder="Insira a legenda da imagem do título">
+            <textarea type="text" id="postDescription" name="postDescription" placeholder="Insira a descrição do post"></textarea>
+            <input type="text" id="postAuthorImage" name="postAuthorImage" placeholder="Insira a URL da imagem do autor">
+            <input type="text" id="postAuthorName" name="postAuthorName" placeholder="Insira o nome do autor">
+            <input type="text" id="postDateHtml" name="postDateHtml" placeholder="Insira a data em HTML">
+            <input type="text" id="postDateNormal" name="postDateNormal" placeholder="Insira a data normal">
+            <input type="text" id="postFacebookUrl" name="postFacebookUrl" placeholder="Insira a URL de compartilhar do Facebook">
+            <input type="text" id="postTwitterUrl" name="postTwitterUrl" placeholder="Insira a URL de compartilhar do Twitter">
+            <input type="text" id="postMp3Url" name="postMp3Url" placeholder="Insira a URL do MP3">
+        </div>
+
+        <div>
+            <label>Postagem Texto</label>
+            <textarea type="text" id="postTextoP" name="postTextoP" placeholder="Paragrafo do post"></textarea>
+            <input type="text" id="postTextoImg" name="postTextoImg" placeholder="Img do post">
+            <input type="text" id="postTextoFig" name="postTextoFig" placeholder="Legenda da imagem do post">
+            <input type="text" id="postTextoVideo" name="postTextoVideo" placeholder="Url do Youtube">
+        </div>
+
+        <div>
+            <label>Postagem Tags</label>
+            <input type="text" id="postTag1" name="postTag1" placeholder="Insira a tag 1">
+            <input type="text" id="postTagURL1" name="postTagURL1" placeholder="Insira a url da tag 1">
+            <input type="text" id="postTag2" name="postTag2" placeholder="Insira a tag 2">
+            <input type="text" id="postTagURL2" name="postTagURL2" placeholder="Insira a url da tag 2">
+            <input type="text" id="postTag3" name="postTag3" placeholder="Insira a tag 3">
+            <input type="text" id="postTagURL3" name="postTagURL3" placeholder="Insira a url da tag 3">
+            <input type="text" id="postTag4" name="postTag4" placeholder="Insira a tag 4">
+            <input type="text" id="postTagURL4" name="postTagURL4" placeholder="Insira a url da tag 4">
+            <input type="text" id="postTag5" name="postTag5" placeholder="Insira a tag 5">
+            <input type="text" id="postTagURL5" name="postTagURL5" placeholder="Insira a url da tag 5">
+        </div>
+
+        <div>
+            <label>Comentário</label>
+            <input type="text" id="commentId" name="commentId" placeholder="Insira o ID do comentário">
+        </div>
+        <button type="submit">Gerar HTML</button>
+    </form>
+
+    <div class="botoes">
+        <button id="limpar">Limpar</button>
+        <button type="submit" id="baixar">baixar</button>
+    </div>
+
+    <div id="resultado"></div>
+
+
+    <div class="copiar">
+        <button id="copiar">Copiar</button>
+    </div>
+
+    <script>
+        document.getElementById('baixar').addEventListener('click', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Obtém o valor do campo de entrada para o nome do arquivo
+            const filename = document.getElementById('download').value.trim() || 'arquivo.html';
+            
+            // Obtém o HTML gerado
+            const htmlContent = document.getElementById('resultado').textContent;
+
+            // Cria um blob com o conteúdo HTML
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+
+            // Cria um link para o blob
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+
+            // Adiciona o link ao DOM e clica nele para iniciar o download
+            document.body.appendChild(a);
+            a.click();
+
+            // Remove o link do DOM
+            document.body.removeChild(a);
+
+            // Revoga o objeto URL para liberar recursos
+            URL.revokeObjectURL(url);
+        });
+
+        document.getElementById('limpar').addEventListener('click', function() {
+            // Seleciona todos os campos de input no formulário
+            const inputs = document.querySelectorAll('#post-form input[type="text"]');
+            
+            // Itera sobre cada input e limpa o valor
+            inputs.forEach(input => {
+                input.value = '';
+            });
+
+            // Limpa o conteúdo do resultado
+            document.getElementById('resultado').textContent = '';
+        });
+
+        document.getElementById('post-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+
+            // Obtém os valores dos inputs
+            let seoDescription = document.getElementById('seoDescription').value;
+            let seoTags = document.getElementById('seoTags').value;
+            let seoAuthor = document.getElementById('seoAuthor').value;
+
+            let ogTitle = document.getElementById('ogTitle').value;
+            let ogUrl = document.getElementById('ogUrl').value;
+            let ogImage = document.getElementById('ogImage').value;
+            let ogDescription = document.getElementById('ogDescription').value;
+
+            let pageTitle = document.getElementById('pageTitle').value;
+
+            let postTitleImage = document.getElementById('postTitleImage').value;
+            let postTitleTagURL = document.getElementById('postTitleTagURL').value;
+            let postTitleTag = document.getElementById('postTitleTag').value;
+            let postTitleText = document.getElementById('postTitleText').value;
+
+            let postDescriptionCaption = document.getElementById('postDescriptionCaption').value;
+            let postDescription = document.getElementById('postDescription').value;
+            let postAuthorImage = document.getElementById('postAuthorImage').value;
+            let postAuthorName = document.getElementById('postAuthorName').value;
+            let postDateHtml = document.getElementById('postDateHtml').value;
+            let postDateNormal = document.getElementById('postDateNormal').value;
+            let postFacebookUrl = document.getElementById('postFacebookUrl').value;
+            let postTwitterUrl = document.getElementById('postTwitterUrl').value;
+            let postMp3Url = document.getElementById('postMp3Url').value;
+            
+            let postTextoP = document.getElementById('postTextoP').value;
+            let postTextoImg = document.getElementById('postTextoImg').value;
+            let postTextoFig = document.getElementById('postTextoFig').value;
+            let postTextoVideo = document.getElementById('postTextoVideo').value;
+
+            let postTag1 = document.getElementById('postTag1').value;
+            let postTagURL1 = document.getElementById('postTagURL1').value;
+            let postTag2 = document.getElementById('postTag2').value;
+            let postTagURL2 = document.getElementById('postTagURL2').value;
+            let postTag3 = document.getElementById('postTag3').value;
+            let postTagURL3 = document.getElementById('postTagURL3').value;
+            let postTag4 = document.getElementById('postTag4').value;
+            let postTagURL4 = document.getElementById('postTagURL4').value;
+            let postTag5 = document.getElementById('postTag5').value;
+            let postTagURL5 = document.getElementById('postTagURL5').value;
+            
+            let commentId = document.getElementById('commentId').value;
+
+            // Cria o HTML com os valores inseridos
+            let htmlContent = `
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;!-- Metadados Básicos --&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+
+    &lt;!-- Metadados de SEO --&gt;
+    &lt;meta name="description" content="${seoDescription}"&gt;
+    &lt;meta name="keywords" content="${seoTags}"&gt;
+    &lt;meta name="author" content="${seoAuthor}"&gt;
+    &lt;meta name="robots" content="index,follow"&gt;
+
+    &lt;!-- Metadados Open Graph --&gt;
+    &lt;meta property="og:type" content="website"&gt;
+    &lt;meta property="og:title" content="${ogTitle}"&gt;
+    &lt;meta property="og:url" content="${ogUrl}"&gt;
+    &lt;meta property="og:image" content="${ogImage}"&gt;
+    &lt;meta property="og:description" content="${ogDescription}"&gt;
+
+    &lt;!-- Título da Página --&gt;
+    &lt;title&gt;${pageTitle} | BoxBuzz&lt;/title&gt;
+
+    &lt;!-- Links de Estilo e Favicon --&gt;
+    &lt;link rel="stylesheet" href="../css/style.css"&gt;
+    &lt;link rel="shortcut icon" href="https://6696cfaac891101cdca269a5--deltbox.netlify.app/img/menu/favicon.ico"/&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Preloader --&gt;
+    &lt;div class='pre-loader'&gt;
+        &lt;img class='loading-gif' alt='loading' src="https://ia600602.us.archive.org/11/items/logo_20240723_202407/logo.gif"/&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Menu --&gt;
+    &lt;div id="menu"&gt;&lt;/div&gt;
+
+    &lt;div class="postagem-titulo" style="background-image:url('${postTitleImage}');"&gt;
+        &lt;div class="postagem-titulo-area"&gt;
+            &lt;div&gt;
+                &lt;a href="${postTitleTagURL}"&gt;${postTitleTag}&lt;/a&gt;
+                &lt;h1&gt;${postTitleText}&lt;/h1&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;main class="postagem"&gt;
+        &lt;article class="postagem-descricao"&gt;
+            &lt;figcaption class="postagem-legenda"&gt;${postDescriptionCaption}&lt;/figcaption&gt;
+            
+            &lt;p class="postagem-paragrafo"&gt;${postDescription}&lt;/p&gt;
+            
+            &lt;address class="postagem-autor"&gt;
+                &lt;img src="${postAuthorImage}" alt="Foto do autor Nelson Marques"&gt;
+                
+                &lt;p&gt;&lt;span&gt;&lt;a href=""&gt;${postAuthorName}&lt;/a&gt;&lt;/span&gt; - &lt;data datetime="${postDateHtml}"&gt;${postDateNormal}&lt;/data&gt;&lt;/p&gt;
+            &lt;/address&gt;
+            
+            &lt;div class="postagem-compartilhar"&gt;
+                &lt;i class="fa-brands fa-facebook-f" aria-hidden="true"&gt;&lt;/i&gt;
+                
+                &lt;p&gt;&lt;a href="${postFacebookUrl}" target="_blank" rel="noopener noreferrer"&gt;Compartilhar&lt;/a&gt;&lt;/p&gt;
+                
+                &lt;i class="fa-brands fa-twitter" aria-hidden="true"&gt;&lt;/i&gt;
+                
+                &lt;p&gt;&lt;a href="${postTwitterUrl}" target="_blank" rel="noopener noreferrer"&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;div id="audioplayer"&gt;
+                &lt;button id="pButton" class="play"&gt;&lt;/button&gt;
+
+                &lt;div id="timeline"&gt;
+                  &lt;div id="playhead"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;!-- Audio element --&gt;
+              &lt;audio id="music" src="${postMp3Url}"&gt;&lt;/audio&gt;
+        &lt;/article&gt;
+
+        &lt;article class="postagem-texto"&gt;
+            &lt;p&gt;${postTextoP}&lt;/p&gt;
+
+            &lt;figure&gt;
+                &lt;img src="${postTextoImg}" alt=""&gt;
+                &lt;figcaption&gt;${postTextoFig}&lt;/figcaption&gt;
+            &lt;/figure&gt;
+
+            &lt;div class="postagem-texto-video"&gt;${postTextoVideo}&lt;/div&gt;
+        &lt;/article&gt;
+
+        &lt;section class="postagem-tags"&gt;
+            &lt;p&gt;Tags:&lt;/p&gt;
+            &lt;a href="${postTagURL1}"&gt;${postTag1}&lt;/a&gt;
+            &lt;a href="${postTagURL2}"&gt;${postTag2}&lt;/a&gt;
+            &lt;a href="${postTagURL3}"&gt;${postTag3}&lt;/a&gt;
+            &lt;a href="${postTagURL4}"&gt;${postTag4}&lt;/a&gt;
+            &lt;a href="${postTagURL5}"&gt;${postTag5}&lt;/a&gt;
+        &lt;/section&gt;
+
+        &lt;div id="commento"&gt;&lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;!-- Sub Roda Pé  --&gt;
+    &lt;div id="sub-roda-pe"&gt;&lt;/div&gt;
+
+    &lt;!-- Roda Pé --&gt;
+    &lt;div id="roda-pe"&gt;&lt;/div&gt;
+
+    &lt;!-- Biblioteca de Ícones --&gt;
+    &lt;script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+
+    &lt;!-- Jquery --&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.7.1.min.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Mp3 Player --&gt;
+    &lt;script src="../js/mp3-player.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Script --&gt;
+    &lt;script src="../js/script.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Comentario JS --&gt;
+    &lt;script defer src="http://commento.example.com/js/commento.js" data-css-override="http://example.com/my-custom-styling.css" data-auto-init="true" data-page-id="${commentId}"&gt;
+    &lt;/script&gt;
+    
+    &lt;script defer src="https://cdn.commento.io/js/commento.js"&gt;&lt;/script&gt;
+
+    &lt;script type="text/javascript"&gt;
+        // Carregar HTML externo
+        $(document).ready(function () {
+            $("#menu").load("../html/principal/menu.html");
+            $("#sub-roda-pe").load("../html/principal/sub-roda-pe.html");
+            $("#roda-pe").load("../html/principal/roda-pe.html");
+            $("#stories").load("../html/stories/stories.html");
+            $("#post").load("../html/post/post.html");
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            `;
+
+            // Exibe o HTML escapado no elemento de resultado
+            document.getElementById('resultado').innerHTML = htmlContent;
+        });
+
+        // Função para copiar o conteúdo
+        document.getElementById('copiar').addEventListener('click', function() {
+            const resultado = document.getElementById('resultado');
+            const range = document.createRange();
+            range.selectNode(resultado);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert('Código copiado para a área de transferência!');
+            } catch (err) {
+                alert('Não foi possível copiar o código. Tente novamente.');
+            }
+
+            window.getSelection().removeAllRanges(); // Remove a seleção
+        });
+    </script>
+</body>
+</html>
