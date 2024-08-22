@@ -1,0 +1,112 @@
+.parceria-main {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 99%, rgba(255, 255, 255, 0) 99%);
+}
+
+.parceria-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    margin: 0 auto;
+    padding-top:109px;
+}
+
+.parceria-area h1 {
+    font-family: BarlowCondensed-Bold;
+    font-size: 56.97px;
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.parceria-area p {
+    max-width: 672px;
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    line-height: 31px;
+    margin: 0 auto;
+    margin-bottom:35px;
+}
+
+.parceria-area p a{
+    text-decoration:underline;
+    text-decoration-color: #f568bb;
+}
+
+.parceria-area p:last-child{
+    margin-bottom:38px;
+}
+
+.parceria-area form {
+    width: 100%;
+    max-width: 672px;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap:30px;
+    margin: 0 auto;
+}
+
+.parceria-area form input {
+    height: 50px;
+    padding: 0px 15px;
+    border: 1px solid #d4c5fe;
+    background: transparent;
+    border-radius: 6px;
+    color: #d4c5fe;
+    font-family: VCR;
+}
+
+.parceria-area form textarea {
+    height: 230px;
+    padding: 15px;
+    font-family: VCR;
+    font-size:13px;
+    color: #d4c5fe;
+    border: 1px solid #d4c5fe;
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+.parceria-area form input:focus,
+.parceria-area form textarea:focus {
+    outline: none;
+}
+
+.parceria-area form button {
+    width: 140px;
+    height: 50px;
+    background: #d4c5fe;
+    text-shadow: 1px 1px 0px #fd59fd, -1px 0px 0px #03d904, 2px 2px #dcef00;
+    animation: ButtomAnimation 8s infinite;
+    color: black;
+    font-size: 14px;
+    font-family: VCR;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.parceria-area form button:active {
+    transform: scale(0.9);
+}
+
+@media(min-width:768px) {
+    .parceria-area {
+        padding-top:139px;
+    }
+
+    .parceria-area h1 {
+        font-size: 91.42px;
+        margin-bottom:54px;
+    }
+
+    .parceria-area p{
+        margin-bottom:25px;
+    }
+
+    .parceria-area p:last-child{
+        margin-bottom:42px;
+    }
+}
