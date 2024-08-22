@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="nofollowindex,nofollow">
+  
+  <title>Home | BoxBuzz</title>
+  
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="shortcut icon" href="https://6696cfaac891101cdca269a5--deltbox.netlify.app/img/menu/favicon.ico" />
+</head>
+<body>
+  <!-- Menu -->
+  <nav class="menu">
+    <div class="menu-area">
+      <div class="menu-sanduiche">
+        <span class="sanduiche-01"></span>
+        
+        <span class="sanduiche-02"></span>
+        
+        <span class="sanduiche-03"></span>
+      </div>
+      
+      <div class="menu-icone">
+        <a href="/"><img src="../../img/menu/logo.gif" alt="Logo"></a>
+      </div>
+      
+      <div class="menu-social">
+        <a target="_blank" href="https://www.instagram.com/boxbuzz/"><i class="fab fa-instagram"></i></a>
+        
+        <a target="_blank" href="https://x.com/boxbuzzoficial"><i class="fab fa-twitter"></i></a>
+        
+        <a target="_blank" href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61561175630300"><i class="fab fa-facebook-square"></i></a>
+        
+        <a target="_blank" href="https://www.reddit.com/r/BoxBuzz/"><i class="fab fa-reddit-alien"></i></a>
+      </div>
+      
+      <div class="menu-pesquisa">
+        <i id="search-icon" class="fa fa-search"></i>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Menu Mobile -->
+  <div class="menu-mobile">
+    <div class="menu-mobile-area">
+      <div class="menu-mobile-bloco">
+        <div class="menu-explorar">
+          <h1 title="Explorar">Explorar</h1>
+          
+          <hr>
+          
+          <a href='../../tags.html#Comportamento'>Comportamento</a>
+          
+          <a href='../../tags.html#Filmes-e-TV'>Filmes e TV</a>
+          
+          <a href='../../tags.html#Musica'>Música</a>
+          
+          <a href='../../tags.html#Drogas'>Drogas</a>
+          
+          <a href='../../tags.html#Games'>Games</a>
+          
+          <a href='../../tags.html#Politica'>Política</a>
+          
+          <a href='../../tags.html#mostrar-todos' style="color:#bdff00;">Tags+</a>
+        </div>
+        
+        <div class="menu-series">
+          <h1 title="Series">Series</h1>
+          
+          <hr>
+          
+          <a href='/tags/series/box-doc'>Box.doc</a>
+          
+          <a href='/tags/series/entrevista'>Entrevista</a>
+          
+          <a href='/tags/series/retro-rewind'>Retro Rewind</a>
+          
+          <a href='/tags/series/game-changers'>Game Changers</a>
+        </div>
+        
+        <div class="menu-ultimas">
+          <div>
+            <picture>
+              <img src="https://ia601905.us.archive.org/33/items/1588961569764-brioches-s-01-e-01_20240723/1588961569764-brioches_S01E01.jpg" alt="" loading="lazy">
+            </picture>
+            
+            <p><span><a href="#">Rodrigo Faro cancela "Cavalo" em seu programa!</a></span></p>
+          </div>
+          
+          <div>
+            <picture>
+              <img src="https://ia601905.us.archive.org/33/items/1588961569764-brioches-s-01-e-01_20240723/1588961569764-brioches_S01E01.jpg" alt="" loading="lazy">
+            </picture>
+            
+            <p><span><a href="#">Congelamento de óvulos: é pra mim?</a></span></p>
+          </div>
+          
+          <div>
+            <picture>
+              <img src="https://ia601905.us.archive.org/33/items/1588961569764-brioches-s-01-e-01_20240723/1588961569764-brioches_S01E01.jpg" alt="" loading="lazy">
+            </picture>
+            
+            <p><span><a href="#">Congelamento de óvulos: é pra mim?</a></span></p>
+          </div>
+        </div>
+        
+        <div class="menu-roda-pe">
+          <div class="menu-mobile-social">
+            <a target="_blank" href="https://www.tiktok.com/@boxbuzzoficial"><i class="fab fa-tiktok"></i></a>
+            
+            <a target="_blank" href="https://www.instagram.com/boxbuzz/"><i class="fab fa-instagram"></i></a>
+            
+            <a target="_blank" href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61561175630300"><i class="fab fa-facebook-f"></i></a>
+            
+            <a target="_blank" href="https://x.com/boxbuzzoficial"><i class="fab fa-twitter"></i></a>
+            
+            <a target="_blank" href="https://www.reddit.com/r/BoxBuzz/"><i class="fab fa-reddit-alien"></i></a>
+            
+            <a target="_blank" href="https://www.youtube.com/@box_buzz"><i class="fab fa-youtube"></i></a>
+          </div>
+         
+          <div class="menu-mobile-links">
+            <a href="#newsleter" target="_blank">Newsletter</a>
+            
+            <a href='/contato'>Contatos</a>
+            
+            <a href='/sobre'>Sobre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="search-popup" id="search-popup">
+    <div class="search-popup-area">
+      <input type="text" id="pesqizi" placeholder="Busque por post, autor, tags">
+      
+      <input type="submit" id="search-button" value="Buscar">
+    </div>
+  </div>
+  
+  <!-- Biblioteca de Ícones -->
+  <script src="https://kit.fontawesome.com/1111dee495.js" crossorigin="anonymous"></script>
+  
+  <script>
+    // Função para alternar o menu
+    function toggleMenu() {
+      const menuSanduiche = document.querySelector('.menu-sanduiche');
+      const menuMobile = document.querySelector('.menu-mobile');
+      menuSanduiche.classList.toggle('sanduiche');
+      menuMobile.classList.toggle('active');
+    }
+    // Adiciona evento de clique ao botão do menu sanduíche
+    document.querySelector('.menu-sanduiche').addEventListener('click', toggleMenu);
+    // Função para alternar o popup de pesquisa
+    document.getElementById('search-icon').addEventListener('click', function () {
+      const searchPopup = document.getElementById('search-popup');
+      searchPopup.classList.toggle('visible');
+    });
+    // Adiciona evento de clique para fechar o popup ao clicar fora dos inputs
+    document.getElementById('search-popup').addEventListener('click', function (event) {
+      // Verifica se o clique foi fora dos inputs
+      if (!event.target.closest('input')) {
+        this.classList.remove('visible');
+      }
+    });
+  </script>
+  
+  <script>
+    document.getElementById('pesqizi').addEventListener('keypress', function (event) {
+      if (event.key === 'Enter') {
+        event.preventDefault(); // Impede o comportamento padrão do Enter
+        var searchTerm = encodeURIComponent(this.value.trim());
+        window.location.href = '../search.html#pesquisar=' + searchTerm;
+      }
+    });
+    // Adiciona evento de clique para o botão de busca
+    document.getElementById('search-button').addEventListener('click', function (event) {
+      event.preventDefault(); // Impede o comportamento padrão do botão de submit
+      var searchTerm = encodeURIComponent(document.getElementById('pesqizi').value.trim());
+      window.location.href = '../search.html#pesquisar=' + searchTerm;
+    });
+  </script>
+
+  <script>
+    // Função para fechar o menu mobile
+    function closeMenu() {
+      const menuMobile = document.querySelector('.menu-mobile');
+      const menuSanduiche = document.querySelector('.menu-sanduiche');
+      menuMobile.classList.remove('active');
+      menuSanduiche.classList.remove('sanduiche');
+    }
+
+    // Seleciona todos os links dentro do menu "Explorar"
+    const explorarLinks = document.querySelectorAll('.menu-explorar a');
+
+    // Adiciona o evento de clique a cada link
+    explorarLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  </script>
+</body>
+</html>
